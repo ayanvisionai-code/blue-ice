@@ -11,6 +11,8 @@ export default function ContactPage() {
   return (
     <div className="page-contact page-padding-top">
       <div className="page-banner">
+        <div className="page-banner-bg" style={{ backgroundImage: "url('images/village_valley_view.png')" }}></div>
+        <div className="page-banner-overlay"></div>
         <div className="banner-inner" data-reveal="fade-up">
           <p className="eyebrow-warm">{tx.eyebrow}</p>
           <h1 className="banner-heading">{tx.h1}</h1>
