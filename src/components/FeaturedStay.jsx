@@ -9,45 +9,45 @@ const rooms = [
     tag: 'Mountain View',
     tagClass: 'tag-gold',
     price: '\u20B93,800',
-    capacity: '2 Guests · King Bed',
+    capacity: '2 Guests &middot; King Bed',
     size: '320 sq.ft',
-    desc: 'Wall-to-wall windows opening to the Himalayas. Fall asleep to crickets, wake to clouds drifting past your sill.',
-    features: ['Private Verandah', 'Free Breakfast', 'Heated Blanket', 'Kanchenjunga View'],
+    desc: 'Floor-to-ceiling glass framing the Kanchenjunga horizon. Fall asleep to mountain crickets, wake to soft clouds drifting past your windowsill.',
+    features: ['Private Verandah', 'Farm Breakfast Included', 'Heated Electric Blanket', 'Unfiltered Mountain Panorama'],
     img: 'images/stay_room_suite.png',
   },
   {
     id: '02',
     name: 'Heritage Loft',
-    tag: 'Signature Stay',
+    tag: 'Signature Haven',
     tagClass: 'tag-signature',
     price: '\u20B94,500',
-    capacity: '2\u20133 Guests · Queen + Daybed',
+    capacity: '2\u20133 Guests &middot; Queen + Daybed',
     size: '410 sq.ft',
-    desc: 'Hand-painted wooden ceilings, antique hill furniture, and a fireplace carrying the warmth of mountain winters past.',
-    features: ['Fireplace', 'Handmade Woodwork', 'Verandah Lounge', 'Meals Included'],
+    desc: 'Reclaimed cedar woodwork, hand-loomed hill textiles, and a private stone fireplace carrying the warmth of mountain winters past.',
+    features: ['Stone Fireplace', 'Handcrafted Cedar Details', 'Verandah Tea Lounge', 'All Meals Included Option'],
     img: 'images/room_cozy_warm.png',
   },
   {
     id: '03',
     name: 'Forest Cottage',
-    tag: 'Forest Retreat',
+    tag: 'Rhododendron Sanctuary',
     tagClass: 'tag-forest',
     price: '\u20B93,200',
-    capacity: '2 Guests · Double Bed',
+    capacity: '2 Guests &middot; Double Bed',
     size: '280 sq.ft',
-    desc: 'Surrounded by rhododendron trees and birdsong. Your own private corner of the Himalayan forest.',
-    features: ['Forest View', 'Private Entrance', 'Hot Shower', 'Birdwatching Porch'],
+    desc: 'Tucked beneath ancient rhododendron trees. A quiet, secluded corner where wild birdsong is your only morning alarm.',
+    features: ['Pine Forest View', 'Private Entrance', 'Continuous Hot Water', 'Birdwatching Porch'],
     img: 'images/village_valley_view.png',
   },
 ];
 
 const amenities = [
-  { icon: <KitchenIcon size={20} color="var(--amber-light)" />, label: 'Home-cooked Meals' },
-  { icon: <ElevationIcon size={20} color="var(--amber-light)" />, label: '3,800 ft Elevation' },
-  { icon: <FireIcon size={20} color="var(--amber-light)" />, label: 'Evening Bonfire' },
-  { icon: <WifiIcon size={20} color="var(--amber-light)" />, label: 'High-Speed WiFi' },
-  { icon: <CarIcon size={20} color="var(--amber-light)" />, label: 'Free Pickup & Parking' },
-  { icon: <TeaIcon size={20} color="var(--amber-light)" />, label: 'Daily Tea Service' },
+  { icon: <KitchenIcon size={20} color="var(--amber-light)" />, label: 'Home-cooked Organic Meals' },
+  { icon: <ElevationIcon size={20} color="var(--amber-light)" />, label: '3,800 ft Cloudline Vistas' },
+  { icon: <FireIcon size={20} color="var(--amber-light)" />, label: 'Nightly Wood Bonfire' },
+  { icon: <WifiIcon size={20} color="var(--amber-light)" />, label: 'High-Speed Fiber WiFi' },
+  { icon: <CarIcon size={20} color="var(--amber-light)" />, label: 'Private Airport Pickup Available' },
+  { icon: <TeaIcon size={20} color="var(--amber-light)" />, label: 'Fresh Local Tea Service' },
 ];
 
 export default function FeaturedStay() {
@@ -56,11 +56,11 @@ export default function FeaturedStay() {
       <div className="section-inner">
         {/* Header */}
         <div className="section-header" data-reveal="fade-up">
-          <p className="eyebrow-warm">Stay Collection</p>
+          <p className="eyebrow-warm">Crafted for Rest &amp; Reflection</p>
           <h2 className="section-heading">
-            Spaces That<br/><em>Feel Like Home</em>
+            Sanctuaries in <em>the Clouds</em>
           </h2>
-          <p className="section-sub">Handcrafted rooms with panoramic views and warm Himalayan hospitality.</p>
+          <p className="section-sub">Thoughtfully designed mountain rooms built with natural cedar timber and genuine Himalayan warmth.</p>
         </div>
 
         {/* Room Cards */}
@@ -88,7 +88,7 @@ export default function FeaturedStay() {
                     <span key={i} className="rc-feature">&check; {f}</span>
                   ))}
                 </div>
-                <Link to="/contact" className="btn-warm rc-btn">Reserve This Room &rarr;</Link>
+                <Link to="/contact" className="btn-warm rc-btn">Reserve This Suite &rarr;</Link>
               </div>
             </article>
           ))}
@@ -96,7 +96,7 @@ export default function FeaturedStay() {
 
         {/* Amenities Bar */}
         <div className="amenities-bar" data-reveal="fade-up">
-          <p className="amenities-title">Included in Every Stay</p>
+          <p className="amenities-title">Included With Every Stay</p>
           <div className="amenities-row">
             {amenities.map((a, i) => (
               <div key={i} className="amenity-pill">
@@ -108,7 +108,7 @@ export default function FeaturedStay() {
         </div>
 
         <div className="section-cta-row" data-reveal="fade-up">
-          <Link to="/contact" className="btn-outline-warm">Check Room Availability &rarr;</Link>
+          <Link to="/contact" className="btn-outline-warm">Check Custom Availability &rarr;</Link>
         </div>
       </div>
     </section>

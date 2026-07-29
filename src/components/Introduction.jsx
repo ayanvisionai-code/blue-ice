@@ -1,50 +1,58 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Introduction() {
   return (
     <section id="story" className="story-section" aria-label="Our Story">
-      <div className="story-inner">
-        <div className="story-img-col">
-          <div className="story-img-frame" data-reveal="clip-up">
-            <img src="images/story_mountain_path.png" alt="Morning path in Munsong" className="story-img" loading="lazy" />
-            <div className="story-img-badge">
-              <span className="sib-place">Lower Burmaik</span>
-              <span className="sib-elev">3,800 ft · Dawn</span>
+      <div className="section-inner">
+        <div className="story-inner" data-reveal="fade-up">
+          {/* Left Column: Image Frame */}
+          <div className="story-img-frame">
+            <img src="images/story_mountain_path.png" alt="Mountain Path in Munsong" className="story-img" loading="lazy" />
+            <div className="story-badge">
+              <span className="sb-num">3,800</span>
+              <span className="sb-unit">FT</span>
+              <span className="sb-label">Lower Burmaik &middot; Munsong</span>
             </div>
           </div>
-          <div className="story-stats-row" data-reveal="fade-up">
-            <div className="story-stat">
-              <span className="ss-num">4.9★</span>
-              <span className="ss-label">Guest Rating</span>
-            </div>
-            <div className="story-stat-sep"></div>
-            <div className="story-stat">
-              <span className="ss-num">∞</span>
-              <span className="ss-label">Horizons</span>
-            </div>
-            <div className="story-stat-sep"></div>
-            <div className="story-stat">
-              <span className="ss-num">1</span>
-              <span className="ss-label">Family Home</span>
-            </div>
-          </div>
-        </div>
 
-        <div className="story-text-col">
-          <p className="eyebrow-warm" data-reveal="fade-up">A Letter From The Mountains</p>
-          <h2 className="story-heading" data-reveal="fade-up">
-            We Didn't Build<br/>
-            a Homestay.<br/>
-            <em>We Opened Our Home.</em>
-          </h2>
-          <p className="story-body" data-reveal="fade-up">
-            Perched above the valley mist in Lower Burmaik, Lakhey Lachen is a real family home — where mornings smell of Darjeeling tea, evenings glow with bonfire warmth, and strangers arrive only to leave as family.
-          </p>
-          <p className="story-body" data-reveal="fade-up">
-            At 3,800 feet, you wake above the clouds. The Kanchenjunga range fills your window. This is the Himalayas before the crowds found it.
-          </p>
-          <p className="story-sig" data-reveal="fade-up">— The Blue Ice Family, Munsong</p>
-          <a href="#cta" className="btn-warm story-cta" data-reveal="fade-up">Experience It Yourself →</a>
+          {/* Right Column: Narrative Copy */}
+          <div className="story-text">
+            <p className="eyebrow-warm">The Lakhey Heritage</p>
+            <h2 className="story-heading">
+              More Than a Stay.<br/>
+              <em>A Himalayan Home.</em>
+            </h2>
+
+            <p className="story-para story-lead">
+              For generations, our family has called these mist-wrapped ridges home. We built Blue Ice not as a commercial resort, but as an open-hearted hearth for travelers seeking authentic Sikkim warmth.
+            </p>
+
+            <p className="story-para">
+              Here, meals are prepared with vegetables picked fresh from our own organic terrace farm. Conversations unfold over wood-fired tea, and your hosts remember your name, your preferences, and your stories.
+            </p>
+
+            <div className="story-stats-row">
+              <div className="story-stat">
+                <span className="stat-num">100%</span>
+                <span className="stat-lbl">Organic Farm Kitchen</span>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="story-stat">
+                <span className="stat-num">4.9&starf;</span>
+                <span className="stat-lbl">Guest Hospitality Rating</span>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="story-stat">
+                <span className="stat-num">0</span>
+                <span className="stat-lbl">City Noise &amp; Traffic</span>
+              </div>
+            </div>
+
+            <div className="story-action">
+              <Link to="/contact" className="btn-warm">Plan Your Journey &rarr;</Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

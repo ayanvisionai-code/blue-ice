@@ -10,43 +10,43 @@ const moments = [
     icon: <SunIcon size={24} color="var(--amber-light)" />,
     num: '01',
     title: 'Sunrise Above the Clouds',
-    desc: 'Wake before the world stirs. Watch gold pour over the Kanchenjunga range from your private verandah. A cup of Darjeeling tea in hand.',
+    desc: 'Wake before the valley stirs. Watch gold pour over the Kanchenjunga range from your private verandah with a steaming cup of fresh-brewed hill tea.',
     img: 'images/experience_sunrise_tea.png',
     tag: 'Every Morning',
   },
   {
     icon: <FireIcon size={24} color="var(--amber-light)" />,
     num: '02',
-    title: 'Bonfire Evenings',
-    desc: 'As the valley fills with night mist, gather around a wood fire under a sky blazing with stars. No city lights for 80 kilometres.',
+    title: 'Starlit Bonfire Evenings',
+    desc: 'As night mist settles across the pine ridges, gather around a wood hearth beneath an endless sea of stars unmarred by city lights.',
     img: 'images/experience_bonfire.png',
     tag: 'Every Night',
   },
   {
     icon: <LeafIcon size={24} color="var(--amber-light)" />,
     num: '03',
-    title: 'Tea Garden Walks',
-    desc: "Walk the misty terraced slopes of Munsong's tea gardens. Pick fresh leaves. Breathe air that tastes like green hills and rain.",
+    title: 'Misty Tea Garden Trails',
+    desc: 'Walk the terraced slopes of Munsong’s tea gardens. Pluck fresh leaves, breathe rain-washed air, and listen to the whisper of mountain breeze.',
     img: 'images/experience_tea_garden.png',
     tag: '2 km from Home',
   },
   {
     icon: <WaterIcon size={24} color="var(--amber-light)" />,
     num: '04',
-    title: 'Hidden Waterfalls',
-    desc: 'Follow secret trails to gorges the maps have never named. Hidden cascades where the mountain breathes and time slows down.',
+    title: 'Hidden Mountain Cascades',
+    desc: 'Follow secret forest trails to secluded gorges known only to village elders — quiet spots where mountain streams tumble clear and cold.',
     img: 'images/experience_waterfall.png',
     tag: 'Off the Trail',
   },
 ];
 
 const quickActs = [
-  { icon: <TrekIcon size={20} color="var(--amber-light)" />, title: 'Forest Treks', detail: '1.5 hrs · 2 km' },
-  { icon: <ViewpointIcon size={20} color="var(--amber-light)" />, title: 'Teesta Viewpoint', detail: '20 min drive' },
-  { icon: <MonasteryIcon size={20} color="var(--amber-light)" />, title: 'Monastery Visit', detail: '30 min drive' },
-  { icon: <FarmIcon size={20} color="var(--amber-light)" />, title: 'Organic Farm', detail: 'In Homestay' },
-  { icon: <StargazingIcon size={20} color="var(--amber-light)" />, title: 'Stargazing', detail: 'Every Clear Night' },
-  { icon: <KitchenIcon size={20} color="var(--amber-light)" />, title: 'Mountain Kitchen', detail: 'Daily · Home-cooked' },
+  { icon: <TrekIcon size={20} color="var(--amber-light)" />, title: 'Pine Forest Treks', detail: '1.5 hrs &middot; Local trails' },
+  { icon: <ViewpointIcon size={20} color="var(--amber-light)" />, title: 'Teesta River View', detail: '20 min scenic drive' },
+  { icon: <MonasteryIcon size={20} color="var(--amber-light)" />, title: 'Monastery Visits', detail: '30 min drive' },
+  { icon: <FarmIcon size={20} color="var(--amber-light)" />, title: 'Organic Farm Harvest', detail: 'In Homestay Garden' },
+  { icon: <StargazingIcon size={20} color="var(--amber-light)" />, title: 'Night Stargazing', detail: 'Clear Sky Nights' },
+  { icon: <KitchenIcon size={20} color="var(--amber-light)" />, title: 'Hearth Cooking', detail: 'Daily Home Meals' },
 ];
 
 export default function FeaturedExperiences() {
@@ -55,11 +55,11 @@ export default function FeaturedExperiences() {
       <div className="section-inner">
         {/* Header */}
         <div className="section-header" data-reveal="fade-up">
-          <p className="eyebrow-warm">Mountain Moments</p>
+          <p className="eyebrow-warm">Immersive Mountain Life</p>
           <h2 className="section-heading">
-            What Will You<br/><em>Feel Here?</em>
+            What Will You <em>Feel Here?</em>
           </h2>
-          <p className="section-sub">Every hour in Lower Burmaik carries its own magic.</p>
+          <p className="section-sub">Every hour in Lower Burmaik carries its own quiet, unhurried magic.</p>
         </div>
 
         {/* Feature Cards Grid */}
@@ -85,7 +85,7 @@ export default function FeaturedExperiences() {
 
         {/* Quick Activities Chips */}
         <div className="acts-wrap" data-reveal="fade-up">
-          <p className="acts-label">Also at Lakhey Lachen</p>
+          <p className="acts-label">Curated Activities at Lakhey Lachen</p>
           <div className="acts-chips">
             {quickActs.map((a, i) => (
               <div key={i} className="act-chip">
@@ -100,7 +100,7 @@ export default function FeaturedExperiences() {
         </div>
 
         <div className="section-cta-row" data-reveal="fade-up">
-          <Link to="/contact" className="btn-warm">Plan Your Experience &rarr;</Link>
+          <Link to="/contact" className="btn-warm">Plan Your Himalayan Journey &rarr;</Link>
         </div>
       </div>
     </section>

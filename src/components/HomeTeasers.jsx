@@ -8,12 +8,12 @@ export function HomeWelcomeTeaser() {
       <div className="section-inner" data-reveal="fade-up">
         <div className="hw-grid">
           <div className="hw-text">
-            <p className="eyebrow-warm">Welcome to Lakhey Lachen</p>
+            <p className="eyebrow-warm">A Private Himalayan Sanctuary</p>
             <h2 className="section-heading">
-              A Quiet Haven<br/><em>Above the Cloudline</em>
+              Slow Down.<br/><em>You&rsquo;ve Reached the Ridge.</em>
             </h2>
             <p className="hw-desc">
-              Perched at 3,800 ft in Lower Burmaik, Munsong, our homestay is a sanctuary where time slows down. Wake up to gold light pouring over the Kanchenjunga peaks, share home-cooked meals by the hearth, and experience genuine Himalayan warmth.
+              Lower Burmaik isn&rsquo;t just a destination on a map &mdash; it&rsquo;s a feeling you carry home. Here at 3,800 feet above sea level, the clamor of city life quietly dissolves into wood-smoke, pine-scented rain, and the first golden rays spilling across the Kanchenjunga horizon.
             </p>
             <Link to="/story" className="btn-warm">
               Discover Our Full Story &rarr;
@@ -37,31 +37,31 @@ export function HomeExperiencesTeaser() {
     {
       num: '01',
       title: 'Sunrise Above the Clouds',
-      desc: 'Wake before the world stirs. Watch gold pour over Kanchenjunga with hot Darjeeling tea in hand.',
+      desc: 'Wake before the world wakes. Watch liquid gold pour across snow-capped peaks with a piping cup of local hill tea.',
       img: 'images/experience_sunrise_tea.png',
       tag: 'Every Morning',
       icon: <SunIcon size={20} color="var(--amber-light)" />,
     },
     {
       num: '02',
-      title: 'Bonfire Evenings',
-      desc: 'As valley mist rolls in, gather around a wood fire under a sky blazing with stars.',
+      title: 'Starlit Bonfire Evenings',
+      desc: 'As evening mist rolls through the pine trees, gather by a crackling timber fire beneath an unfiltered canopy of stars.',
       img: 'images/experience_bonfire.png',
       tag: 'Every Night',
       icon: <FireIcon size={20} color="var(--amber-light)" />,
     },
     {
       num: '03',
-      title: 'Tea Garden Walks',
-      desc: "Stroll the terraced slopes of Munsong's tea gardens and breathe fresh pine-scented rain.",
+      title: 'Misty Tea Garden Trails',
+      desc: 'Wander quiet terraced slopes where rain smells of wild pine and fresh tea leaves, guided only by gentle mountain breeze.',
       img: 'images/experience_tea_garden.png',
       tag: '2 km from Home',
       icon: <LeafIcon size={20} color="var(--amber-light)" />,
     },
     {
       num: '04',
-      title: 'Hidden Waterfalls',
-      desc: 'Follow secret forest trails to unmapped mountain gorges where cascades tumble quietly.',
+      title: 'Hidden Mountain Cascades',
+      desc: 'Follow secret forest paths to quiet mountain waterfalls known only to local village elders.',
       img: 'images/experience_waterfall.png',
       tag: 'Off the Trail',
       icon: <WaterIcon size={20} color="var(--amber-light)" />,
@@ -72,9 +72,9 @@ export function HomeExperiencesTeaser() {
     <section className="home-exp-teaser-section">
       <div className="section-inner">
         <div className="section-header" data-reveal="fade-up">
-          <p className="eyebrow-warm">Himalayan Moments</p>
+          <p className="eyebrow-warm">Life at Altitude</p>
           <h2 className="section-heading">
-            What Will You <em>Feel Here?</em>
+            Moments That <em>Stay With You</em>
           </h2>
           <p className="section-sub">Immerse yourself in the living rhythm of Lower Burmaik.</p>
         </div>
@@ -109,14 +109,14 @@ export function HomeExperiencesTeaser() {
   );
 }
 
-/* Signature Gallery Strip — replaces Stay Teaser on Homepage */
+/* Signature Gallery Strip — 6 photos */
 const galleryPhotos = [
-  { src: 'images/hero_himalayan_sunrise.png',    alt: 'Himalayan sunrise',    caption: 'No alarm clock needed.' },
-  { src: 'images/experience_tea_garden.png',     alt: 'Tea gardens',          caption: 'Tea gardens at first fog.' },
-  { src: 'images/story_mountain_path.png',       alt: 'Mountain path',        caption: 'Every trail leads somewhere worth it.' },
-  { src: 'images/guest_hospitality_meal.png',    alt: 'Homemade meal',        caption: 'Cooked with love, every time.' },
-  { src: 'images/timeline_stargazing.png',       alt: 'Stargazing night',     caption: 'Stars you never knew existed.' },
-  { src: 'images/experience_waterfall.png',      alt: 'Hidden waterfall',     caption: 'Where the mountain exhales.' },
+  { src: 'images/hero_himalayan_sunrise.png',    alt: 'Himalayan sunrise',    caption: 'No alarm clocks. Just mountain light.' },
+  { src: 'images/experience_tea_garden.png',     alt: 'Tea gardens',          caption: 'Where morning fog embraces the ridge.' },
+  { src: 'images/story_mountain_path.png',       alt: 'Mountain path',        caption: 'Trails paved with quiet reflection.' },
+  { src: 'images/guest_hospitality_meal.png',    alt: 'Homemade meal',        caption: 'Fired by wood, served with love.' },
+  { src: 'images/timeline_stargazing.png',       alt: 'Stargazing night',     caption: 'Constellations unmarred by city lights.' },
+  { src: 'images/experience_waterfall.png',      alt: 'Hidden waterfall',     caption: 'The gentle whisper of mountain streams.' },
 ];
 
 export function HomeGalleryStrip() {
@@ -124,11 +124,11 @@ export function HomeGalleryStrip() {
     <section className="home-gallery-strip-section">
       <div className="section-inner">
         <div className="section-header" data-reveal="fade-up">
-          <p className="eyebrow-warm">Signature Gallery</p>
+          <p className="eyebrow-warm">Signature Impressions</p>
           <h2 className="section-heading">
-            Is It Really <em>This Beautiful?</em>
+            Glimpses of <em>Stillness</em>
           </h2>
-          <p className="section-sub">Decide for yourself.</p>
+          <p className="section-sub">A visual glimpse into our mountain homestay.</p>
         </div>
 
         <div className="hgs-grid" data-reveal="fade-up">
@@ -144,7 +144,7 @@ export function HomeGalleryStrip() {
 
         <div className="section-cta-row" data-reveal="fade-up">
           <Link to="/story" className="btn-outline-warm">
-            See Our Full Story &amp; Gallery &rarr;
+            Read Our Full Story &amp; Heritage &rarr;
           </Link>
         </div>
       </div>
@@ -158,12 +158,12 @@ export function HomeWhyTeaser() {
       <div className="section-inner" data-reveal="fade-up">
         <div className="hwt-banner">
           <div className="hwt-info">
-            <p className="eyebrow-warm">Why Choose Us</p>
-            <h2>Authentic Himalayan Hospitality</h2>
-            <p>100% Organic Farm Meals &middot; 3,800 ft Cloudline Vistas &middot; 4.9 Guest Rating</p>
+            <p className="eyebrow-warm">The Lakhey Promise</p>
+            <h2>Not a Hotel. A Home That Remembers You.</h2>
+            <p>100% Organic Farm Kitchen &middot; 3,800 ft Cloudline Vistas &middot; Genuine Sikkim Hospitality</p>
           </div>
           <Link to="/story" className="btn-outline-warm">
-            Learn Why Guests Love Us &rarr;
+            Discover Why Guests Return &rarr;
           </Link>
         </div>
       </div>

@@ -19,21 +19,20 @@ export default function Hero() {
       <div className="hero-content">
         <p className="hero-location">Lower Burmaik &middot; Munsong &middot; 3,800 ft</p>
         <h1 className="hero-headline">
-          Where Mountains<br/>
-          <em>Whisper</em> &amp;<br/>
-          Mornings Begin.
+          Where the Clouds Rest<br/>
+          <em>&amp; Your Soul Breathes.</em>
         </h1>
         <p className="hero-sub">
-          A family homestay nestled above the clouds in the hidden Himalayas of Sikkim.
+          Perched at 3,800 feet in Munsong. A private family sanctuary built on warm hearths, home-grown meals, and unfiltered mountain silence.
         </p>
         <div className="hero-actions">
-          <Link to="/contact" className="btn-warm" id="btn-plan">Plan My Stay</Link>
-          <Link to="/story" className="btn-outline-warm">Discover Our Story</Link>
+          <Link to="/contact" className="btn-warm" id="btn-plan">Reserve Your Stay</Link>
+          <Link to="/story" className="btn-outline-warm">Explore Our Story</Link>
         </div>
         <div className="hero-trust">
-          <span><StarIcon size={14} color="var(--amber-light)" /> 4.9 Rating</span>
+          <span><StarIcon size={14} color="var(--amber-light)" /> 4.9 Guest Rating</span>
           <span className="ht-sep">&middot;</span>
-          <span>3,800 ft Elevation</span>
+          <span>3,800 ft Cloudline</span>
           <span className="ht-sep">&middot;</span>
           <span>Authentic Family Home</span>
         </div>
