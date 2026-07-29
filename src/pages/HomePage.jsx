@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import { 
   HomeWelcomeTeaser, 
   HomeExperiencesTeaser,
-  HomeStaysTeaser, 
+  HomeGalleryStrip,
   HomeWhyTeaser 
 } from '../components/HomeTeasers';
 import FinalCTA from '../components/FinalCTA';
@@ -14,7 +14,7 @@ export default function HomePage() {
       <Hero />
       <HomeWelcomeTeaser />
       <HomeExperiencesTeaser />
-      <HomeStaysTeaser />
+      <HomeGalleryStrip />
       <HomeWhyTeaser />
       <FinalCTA />
     </div>

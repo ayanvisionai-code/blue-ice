@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SunIcon, FireIcon, LeafIcon, WaterIcon, StarIcon } from './Icons';
+import { SunIcon, FireIcon, LeafIcon, WaterIcon } from './Icons';
 
 export function HomeWelcomeTeaser() {
   return (
@@ -109,59 +109,42 @@ export function HomeExperiencesTeaser() {
   );
 }
 
-export function HomeStaysTeaser() {
-  const teaserRooms = [
-    {
-      id: '01',
-      name: 'Cloudline Suite',
-      tag: 'Mountain View',
-      price: '\u20B93,800/night',
-      desc: 'Wall-to-wall windows opening to the Himalayas. Fall asleep to crickets, wake to clouds past your sill.',
-      img: 'images/stay_room_suite.png',
-    },
-    {
-      id: '02',
-      name: 'Heritage Loft',
-      tag: 'Signature Stay',
-      price: '\u20B94,500/night',
-      desc: 'Hand-painted wooden ceilings, antique hill furniture, and a cozy fireplace for cold mountain nights.',
-      img: 'images/room_cozy_warm.png',
-    },
-  ];
+/* Signature Gallery Strip — replaces Stay Teaser on Homepage */
+const galleryPhotos = [
+  { src: 'images/hero_himalayan_sunrise.png',    alt: 'Himalayan sunrise',    caption: 'No alarm clock needed.' },
+  { src: 'images/experience_tea_garden.png',     alt: 'Tea gardens',          caption: 'Tea gardens at first fog.' },
+  { src: 'images/story_mountain_path.png',       alt: 'Mountain path',        caption: 'Every trail leads somewhere worth it.' },
+  { src: 'images/guest_hospitality_meal.png',    alt: 'Homemade meal',        caption: 'Cooked with love, every time.' },
+  { src: 'images/timeline_stargazing.png',       alt: 'Stargazing night',     caption: 'Stars you never knew existed.' },
+  { src: 'images/experience_waterfall.png',      alt: 'Hidden waterfall',     caption: 'Where the mountain exhales.' },
+];
 
+export function HomeGalleryStrip() {
   return (
-    <section className="home-stays-teaser-section">
+    <section className="home-gallery-strip-section">
       <div className="section-inner">
         <div className="section-header" data-reveal="fade-up">
-          <p className="eyebrow-warm">Accommodations</p>
+          <p className="eyebrow-warm">Signature Gallery</p>
           <h2 className="section-heading">
-            Featured <em>Stay Collection</em>
+            Is It Really <em>This Beautiful?</em>
           </h2>
-          <p className="section-sub">Handcrafted rooms with panoramic views and warm hill hospitality.</p>
+          <p className="section-sub">Decide for yourself.</p>
         </div>
 
-        <div className="hst-grid" data-reveal="fade-up">
-          {teaserRooms.map((room) => (
-            <article key={room.id} className="hst-card">
-              <div className="hst-img-wrap">
-                <img src={room.img} alt={room.name} className="hst-img" loading="lazy" />
-                <span className="hst-tag">{room.tag}</span>
-                <span className="hst-price">{room.price}</span>
+        <div className="hgs-grid" data-reveal="fade-up">
+          {galleryPhotos.map((photo, i) => (
+            <div key={i} className={`hgs-item hgs-${i + 1}`}>
+              <img src={photo.src} alt={photo.alt} className="hgs-img" loading="lazy" />
+              <div className="hgs-overlay">
+                <span className="hgs-caption">{photo.caption}</span>
               </div>
-              <div className="hst-body">
-                <h3 className="hst-title">{room.name}</h3>
-                <p className="hst-desc">{room.desc}</p>
-                <Link to="/stays" className="hst-link">
-                  View Room Details &rarr;
-                </Link>
-              </div>
-            </article>
+            </div>
           ))}
         </div>
 
         <div className="section-cta-row" data-reveal="fade-up">
-          <Link to="/stays" className="btn-outline-warm">
-            Explore All Rooms &amp; Rates &rarr;
+          <Link to="/story" className="btn-outline-warm">
+            See Our Full Story &amp; Gallery &rarr;
           </Link>
         </div>
       </div>
