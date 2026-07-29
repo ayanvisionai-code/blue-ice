@@ -28,42 +28,6 @@ export default function App() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  /* ── Scroll Reveal Observer ── */
-  useEffect(() => {
-    const triggerObserver = () => {
-      const els = document.querySelectorAll('[data-reveal]');
-      if (!els.length) return;
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const children = entry.target.querySelectorAll(
-                '.moment-card, .room-card, .why-card, .act-chip, .gallery-item, .amenity-pill, .contact-card'
-              );
-              if (children.length > 0) {
-                children.forEach((child, i) => {
-                  setTimeout(() => {
-                    child.style.opacity   = '1';
-                    child.style.transform = 'translateY(0)';
-                  }, i * 80);
-                });
-              }
-              entry.target.classList.add('revealed');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.05, rootMargin: '0px 0px -40px 0px' }
-      );
-
-      els.forEach((el) => observer.observe(el));
-    };
-
-    const timer = setTimeout(triggerObserver, 100);
-    return () => clearTimeout(timer);
-  }, []);
-
   /* ── Lock body scroll when mobile menu open ── */
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? 'hidden' : '';
@@ -83,7 +47,7 @@ export default function App() {
 
   return (
     <Router>
-      <ScrollToTop />
+      <ScrollToTop onCloseMobile={() => setMobileOpen(false)} />
       <a href="#main-content" className="skip-link">Skip to content</a>
 
       <Navbar onOpenMobile={() => setMobileOpen(true)} />
