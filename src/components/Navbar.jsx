@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Navbar({ onOpenMobile }) {
   return (
     <nav id="navbar" role="navigation" aria-label="Main navigation">
       <div className="nav-inner">
-        <a href="#hero" className="nav-logo" aria-label="Lakhey Lachen Homestay Home">
+        <Link to="/" className="nav-logo" aria-label="Lakhey Lachen Homestay Home">
           <span className="nav-logo-mark">Blue<span>Ice</span></span>
-          <span className="nav-logo-sub">Lakhey Lachen · Munsong</span>
-        </a>
+          <span className="nav-logo-sub">Lakhey Lachen &middot; Munsong</span>
+        </Link>
         <ul className="nav-links" role="list">
-          <li><a href="#story"   className="nav-link">Story</a></li>
-          <li><a href="#moments" className="nav-link">Experiences</a></li>
-          <li><a href="#stays"   className="nav-link">Stays</a></li>
-          <li><a href="#why"     className="nav-link">Why Us</a></li>
+          <li><NavLink to="/" end className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Home</NavLink></li>
+          <li><NavLink to="/stays" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Stays</NavLink></li>
+          <li><NavLink to="/experiences" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Experiences</NavLink></li>
+          <li><NavLink to="/story" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Our Story</NavLink></li>
+          <li><NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Contact</NavLink></li>
         </ul>
-        <a href="#cta" className="nav-cta btn-gold" id="nav-reserve-btn">Plan My Stay</a>
+        <Link to="/contact" className="nav-cta btn-gold" id="nav-reserve-btn">Book Your Stay</Link>
         <button className="nav-hamburger" id="nav-hamburger" aria-label="Open menu" onClick={onOpenMobile}>
           <span></span><span></span><span></span>
         </button>

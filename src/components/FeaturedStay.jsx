@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { KitchenIcon, ElevationIcon, FireIcon, WifiIcon, CarIcon, TeaIcon } from './Icons';
 
 const rooms = [
@@ -87,7 +88,7 @@ export default function FeaturedStay() {
                     <span key={i} className="rc-feature">&check; {f}</span>
                   ))}
                 </div>
-                <a href="#cta" className="btn-warm rc-btn">Reserve This Room &rarr;</a>
+                <Link to="/contact" className="btn-warm rc-btn">Reserve This Room &rarr;</Link>
               </div>
             </article>
           ))}
@@ -107,7 +108,7 @@ export default function FeaturedStay() {
         </div>
 
         <div className="section-cta-row" data-reveal="fade-up">
-          <a href="#cta" className="btn-outline-warm">View All Rooms &amp; Seasonal Rates &rarr;</a>
+          <Link to="/contact" className="btn-outline-warm">Check Room Availability &rarr;</Link>
         </div>
       </div>
     </section>

@@ -1,77 +1,67 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
-import Hero from './components/Hero';
-import Introduction from './components/Introduction';
-import FeaturedExperiences from './components/FeaturedExperiences';
-import FeaturedStay from './components/FeaturedStay';
-import SignatureGallery from './components/SignatureGallery';
-import WhyBlueIce from './components/WhyBlueIce';
-import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import LightboxModal from './components/LightboxModal';
+import ScrollToTop from './components/ScrollToTop';
+
+import HomePage from './pages/HomePage';
+import StaysPage from './pages/StaysPage';
+import ExperiencesPage from './pages/ExperiencesPage';
+import StoryPage from './pages/StoryPage';
+import ContactPage from './pages/ContactPage';
 
 export default function App() {
-  const [mobileOpen, setMobileOpen]     = useState(false);
-  const [lightboxIdx, setLightboxIdx]   = useState(null);
-  const [navScrolled, setNavScrolled]   = useState(false);
+  const [mobileOpen, setMobileOpen]   = useState(false);
+  const [lightboxIdx, setLightboxIdx] = useState(null);
 
   /* ── Navbar shrink on scroll ── */
   useEffect(() => {
     const onScroll = () => {
-      setNavScrolled(window.scrollY > 60);
       const navbar = document.getElementById('navbar');
       if (navbar) {
-        navbar.classList.toggle('scrolled', window.scrollY > 60);
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
       }
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  /* ── Scroll Reveal via IntersectionObserver ── */
+  /* ── Scroll Reveal Observer ── */
   useEffect(() => {
-    const els = document.querySelectorAll('[data-reveal]');
-    if (!els.length) return;
+    const triggerObserver = () => {
+      const els = document.querySelectorAll('[data-reveal]');
+      if (!els.length) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            // Stagger children inside grids
-            const children = entry.target.querySelectorAll(
-              '.moment-card, .room-card, .why-card, .act-chip, .gallery-item, .amenity-pill'
-            );
-            if (children.length > 0) {
-              children.forEach((child, i) => {
-                setTimeout(() => {
-                  child.style.opacity    = '1';
-                  child.style.transform  = 'translateY(0)';
-                }, i * 90);
-              });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const children = entry.target.querySelectorAll(
+                '.moment-card, .room-card, .why-card, .act-chip, .gallery-item, .amenity-pill, .contact-card'
+              );
+              if (children.length > 0) {
+                children.forEach((child, i) => {
+                  setTimeout(() => {
+                    child.style.opacity   = '1';
+                    child.style.transform = 'translateY(0)';
+                  }, i * 80);
+                });
+              }
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
             }
-            entry.target.classList.add('revealed');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.08, rootMargin: '0px 0px -60px 0px' }
-    );
+          });
+        },
+        { threshold: 0.05, rootMargin: '0px 0px -40px 0px' }
+      );
 
-    els.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
+      els.forEach((el) => observer.observe(el));
+    };
 
-  /* ── Stagger card initial state ── */
-  useEffect(() => {
-    const cards = document.querySelectorAll(
-      '.moment-card, .room-card, .why-card, .gallery-item, .amenity-pill, .act-chip'
-    );
-    cards.forEach((card) => {
-      card.style.opacity   = '0';
-      card.style.transform = 'translateY(28px)';
-      card.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
-    });
+    const timer = setTimeout(triggerObserver, 100);
+    return () => clearTimeout(timer);
   }, []);
 
   /* ── Lock body scroll when mobile menu open ── */
@@ -79,7 +69,7 @@ export default function App() {
     document.body.style.overflow = mobileOpen ? 'hidden' : '';
   }, [mobileOpen]);
 
-  /* ── Keyboard close for lightbox ── */
+  /* ── Lightbox keyboard controls ── */
   useEffect(() => {
     const onKey = (e) => {
       if (lightboxIdx === null) return;
@@ -92,20 +82,21 @@ export default function App() {
   }, [lightboxIdx]);
 
   return (
-    <>
+    <Router>
+      <ScrollToTop />
       <a href="#main-content" className="skip-link">Skip to content</a>
 
       <Navbar onOpenMobile={() => setMobileOpen(true)} />
       {mobileOpen && <MobileMenu onClose={() => setMobileOpen(false)} />}
 
       <main id="main-content">
-        <Hero />
-        <Introduction />
-        <FeaturedExperiences />
-        <FeaturedStay />
-        <SignatureGallery onOpenLightbox={(i) => setLightboxIdx(i)} />
-        <WhyBlueIce />
-        <FinalCTA />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/stays" element={<StaysPage />} />
+          <Route path="/experiences" element={<ExperiencesPage />} />
+          <Route path="/story" element={<StoryPage onOpenLightbox={(i) => setLightboxIdx(i)} />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </main>
 
       <Footer />
@@ -118,6 +109,6 @@ export default function App() {
           onNext={() => setLightboxIdx((i) => Math.min(5, i + 1))}
         />
       )}
-    </>
+    </Router>
   );
 }

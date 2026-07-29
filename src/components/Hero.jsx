@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { StarIcon } from './Icons';
 
 export default function Hero() {
@@ -26,8 +27,8 @@ export default function Hero() {
           A family homestay nestled above the clouds in the hidden Himalayas of Sikkim.
         </p>
         <div className="hero-actions">
-          <a href="#cta" className="btn-warm" id="btn-plan">Plan My Stay</a>
-          <a href="#story" className="btn-outline-warm">Discover Our Story</a>
+          <Link to="/contact" className="btn-warm" id="btn-plan">Plan My Stay</Link>
+          <Link to="/story" className="btn-outline-warm">Discover Our Story</Link>
         </div>
         <div className="hero-trust">
           <span><StarIcon size={14} color="var(--amber-light)" /> 4.9 Rating</span>

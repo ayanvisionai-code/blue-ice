@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { HeartIcon } from './Icons';
 
 export default function Footer() {
@@ -43,18 +44,18 @@ export default function Footer() {
         <div className="footer-links-col">
           <h4 className="footer-col-heading">Explore</h4>
           <ul>
-            <li><a href="#story"   className="footer-link">Our Story</a></li>
-            <li><a href="#moments" className="footer-link">Experiences</a></li>
-            <li><a href="#stays"   className="footer-link">Stay Collection</a></li>
-            <li><a href="#gallery" className="footer-link">Gallery</a></li>
-            <li><a href="#why"     className="footer-link">Why Blue Ice</a></li>
+            <li><Link to="/"           className="footer-link">Home</Link></li>
+            <li><Link to="/stays"      className="footer-link">Stay Collection</Link></li>
+            <li><Link to="/experiences" className="footer-link">Experiences</Link></li>
+            <li><Link to="/story"       className="footer-link">Our Story</Link></li>
+            <li><Link to="/contact"     className="footer-link">Contact &amp; Book</Link></li>
           </ul>
         </div>
 
         <div className="footer-links-col">
           <h4 className="footer-col-heading">Contact</h4>
           <ul>
-            <li><a href="https://wa.me/919800000000" target="_blank" rel="noopener noreferrer" className="footer-link">WhatsApp Booking</a></li>
+            <li><Link to="/contact" className="footer-link">Reserve via WhatsApp</Link></li>
             <li><a href="mailto:blueicemunsong@gmail.com" className="footer-link">blueicemunsong@gmail.com</a></li>
             <li><span className="footer-plain">Lower Burmaik, Munsong</span></li>
             <li><span className="footer-plain">Kalimpong, West Bengal</span></li>

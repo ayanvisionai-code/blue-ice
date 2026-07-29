@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   SunIcon, FireIcon, LeafIcon, WaterIcon, 
   TrekIcon, ViewpointIcon, MonasteryIcon, FarmIcon, StargazingIcon, KitchenIcon 
@@ -99,7 +100,7 @@ export default function FeaturedExperiences() {
         </div>
 
         <div className="section-cta-row" data-reveal="fade-up">
-          <a href="#cta" className="btn-warm">Plan Your Experience &rarr;</a>
+          <Link to="/contact" className="btn-warm">Plan Your Experience &rarr;</Link>
         </div>
       </div>
     </section>
