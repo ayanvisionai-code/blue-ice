@@ -9,10 +9,10 @@ export default function StoryPage({ onOpenLightbox }) {
     <div className="page-story page-padding-top">
       <div className="page-banner">
         <div className="banner-inner" data-reveal="fade-up">
-          <p className="eyebrow-warm">Lower Burmaik &middot; Munsong</p>
-          <h1 className="banner-heading">Our Himalayan Story</h1>
+          <p className="eyebrow-warm">Lower Burmaik &middot; Munsong &middot; 3,800 ft</p>
+          <h1 className="banner-heading">Our Family Story &amp; Heritage</h1>
           <p className="banner-sub">
-            Learn about our family heritage, authentic hill hospitality, and why Blue Ice at 3,800 ft is a sanctuary like no other.
+            For generations, our family has guarded these quiet ridges. Discover our heritage, farm-to-table kitchen, and open-hearted hill hospitality.
           </p>
         </div>
       </div>

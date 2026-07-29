@@ -7,10 +7,10 @@ export default function StaysPage() {
     <div className="page-stays page-padding-top">
       <div className="page-banner">
         <div className="banner-inner" data-reveal="fade-up">
-          <p className="eyebrow-warm">Lakhey Lachen Homestay</p>
-          <h1 className="banner-heading">Our Stay Collection</h1>
+          <p className="eyebrow-warm">Sanctuaries Above the Mist</p>
+          <h1 className="banner-heading">Crafted for Rest &amp; Reflection</h1>
           <p className="banner-sub">
-            Handcrafted mountain suites designed with local cedar wood, warm fireplaces, and unfiltered vistas of the Kanchenjunga range.
+            Handcrafted cedar suites designed with natural warmth, private verandahs, and unfiltered vistas of the Kanchenjunga horizon.
           </p>
         </div>
       </div>
