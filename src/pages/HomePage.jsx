@@ -2,8 +2,8 @@ import React from 'react';
 import Hero from '../components/Hero';
 import { 
   HomeWelcomeTeaser, 
+  HomeExperiencesTeaser,
   HomeStaysTeaser, 
-  HomeExperiencesTeaser, 
   HomeWhyTeaser 
 } from '../components/HomeTeasers';
 import FinalCTA from '../components/FinalCTA';
@@ -13,8 +13,8 @@ export default function HomePage() {
     <div className="page-home">
       <Hero />
       <HomeWelcomeTeaser />
-      <HomeStaysTeaser />
       <HomeExperiencesTeaser />
+      <HomeStaysTeaser />
       <HomeWhyTeaser />
       <FinalCTA />
     </div>

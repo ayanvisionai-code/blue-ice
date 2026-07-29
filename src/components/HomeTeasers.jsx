@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SunIcon, FireIcon, LeafIcon, HomeIcon, StarIcon } from './Icons';
+import { SunIcon, FireIcon, LeafIcon, WaterIcon, StarIcon } from './Icons';
 
 export function HomeWelcomeTeaser() {
   return (
@@ -26,6 +26,83 @@ export function HomeWelcomeTeaser() {
               <small>Lower Burmaik &middot; Kalimpong</small>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function HomeExperiencesTeaser() {
+  const visualMoments = [
+    {
+      num: '01',
+      title: 'Sunrise Above the Clouds',
+      desc: 'Wake before the world stirs. Watch gold pour over Kanchenjunga with hot Darjeeling tea in hand.',
+      img: 'images/experience_sunrise_tea.png',
+      tag: 'Every Morning',
+      icon: <SunIcon size={20} color="var(--amber-light)" />,
+    },
+    {
+      num: '02',
+      title: 'Bonfire Evenings',
+      desc: 'As valley mist rolls in, gather around a wood fire under a sky blazing with stars.',
+      img: 'images/experience_bonfire.png',
+      tag: 'Every Night',
+      icon: <FireIcon size={20} color="var(--amber-light)" />,
+    },
+    {
+      num: '03',
+      title: 'Tea Garden Walks',
+      desc: "Stroll the terraced slopes of Munsong's tea gardens and breathe fresh pine-scented rain.",
+      img: 'images/experience_tea_garden.png',
+      tag: '2 km from Home',
+      icon: <LeafIcon size={20} color="var(--amber-light)" />,
+    },
+    {
+      num: '04',
+      title: 'Hidden Waterfalls',
+      desc: 'Follow secret forest trails to unmapped mountain gorges where cascades tumble quietly.',
+      img: 'images/experience_waterfall.png',
+      tag: 'Off the Trail',
+      icon: <WaterIcon size={20} color="var(--amber-light)" />,
+    },
+  ];
+
+  return (
+    <section className="home-exp-teaser-section">
+      <div className="section-inner">
+        <div className="section-header" data-reveal="fade-up">
+          <p className="eyebrow-warm">Himalayan Moments</p>
+          <h2 className="section-heading">
+            What Will You <em>Feel Here?</em>
+          </h2>
+          <p className="section-sub">Immerse yourself in the living rhythm of Lower Burmaik.</p>
+        </div>
+
+        <div className="hexp-grid" data-reveal="fade-up">
+          {visualMoments.map((m, i) => (
+            <article key={i} className="hexp-card">
+              <div className="hexp-img-wrap">
+                <img src={m.img} alt={m.title} className="hexp-img" loading="lazy" />
+                <div className="hexp-overlay"></div>
+                <span className="hexp-tag">{m.tag}</span>
+              </div>
+              <div className="hexp-body">
+                <div className="hexp-meta">
+                  <span className="hexp-icon">{m.icon}</span>
+                  <span className="hexp-num">{m.num}</span>
+                </div>
+                <h3 className="hexp-title">{m.title}</h3>
+                <p className="hexp-desc">{m.desc}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="section-cta-row" data-reveal="fade-up">
+          <Link to="/experiences" className="btn-warm">
+            Explore All Experiences &amp; Treks &rarr;
+          </Link>
         </div>
       </div>
     </section>
@@ -85,56 +162,6 @@ export function HomeStaysTeaser() {
         <div className="section-cta-row" data-reveal="fade-up">
           <Link to="/stays" className="btn-outline-warm">
             Explore All Rooms &amp; Rates &rarr;
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export function HomeExperiencesTeaser() {
-  const teaserMoments = [
-    {
-      icon: <SunIcon size={22} color="var(--amber-light)" />,
-      title: 'Sunrise Above Clouds',
-      desc: 'Watch gold light pour over Kanchenjunga from your private verandah with hot Darjeeling tea.',
-    },
-    {
-      icon: <FireIcon size={22} color="var(--amber-light)" />,
-      title: 'Bonfire Evenings',
-      desc: 'Gather around a wood fire under a sky blazing with stars as valley mist rolls in.',
-    },
-    {
-      icon: <LeafIcon size={22} color="var(--amber-light)" />,
-      title: 'Tea Garden Walks',
-      desc: 'Stroll through misty terraced slopes and breathe air scented with pine and fresh tea leaves.',
-    },
-  ];
-
-  return (
-    <section className="home-exp-teaser-section">
-      <div className="section-inner">
-        <div className="section-header" data-reveal="fade-up">
-          <p className="eyebrow-warm">Mountain Life</p>
-          <h2 className="section-heading">
-            Unforgettable <em>Moments</em>
-          </h2>
-          <p className="section-sub">Every hour in Lower Burmaik carries its own quiet magic.</p>
-        </div>
-
-        <div className="het-grid" data-reveal="fade-up">
-          {teaserMoments.map((m, i) => (
-            <div key={i} className="het-card">
-              <div className="het-icon-wrap">{m.icon}</div>
-              <h3 className="het-title">{m.title}</h3>
-              <p className="het-desc">{m.desc}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="section-cta-row" data-reveal="fade-up">
-          <Link to="/experiences" className="btn-warm">
-            View All Experiences &amp; Treks &rarr;
           </Link>
         </div>
       </div>

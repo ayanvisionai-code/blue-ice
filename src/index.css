@@ -289,7 +289,7 @@ button { border: none; background: none; font-family: inherit; }
   display: block;
 }
 
-/* ─── MOBILE MENU ───────────────────────────────────────────────── */
+/* ─── LUXURY MOBILE MENU ─────────────────────────────────────────── */
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -298,30 +298,74 @@ button { border: none; background: none; font-family: inherit; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
+  padding: 2.5rem 1.5rem;
+  overflow: hidden;
 }
 
-.mobile-menu-bg {
+.mobile-menu-bg-img {
   position: absolute;
   inset: 0;
-  background: rgba(12, 8, 3, 0.97);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.35) saturate(1.2);
+  transform: scale(1.08);
+}
+
+.mobile-menu-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(18,13,7,0.85) 0%, rgba(10,7,3,0.95) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.mobile-brand-header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.mbh-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--amber-light);
+  letter-spacing: 0.05em;
+  display: block;
+}
+.mbh-title span { color: var(--cream); }
+
+.mbh-sub {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-sub);
 }
 
 .mobile-menu-close {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  z-index: 2;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(201,133,58,0.15);
+  border: 1px solid rgba(201,133,58,0.3);
   font-size: 1.6rem;
-  color: var(--text-muted);
+  color: var(--amber-light);
   cursor: pointer;
-  padding: 0.5rem;
-  line-height: 1;
-  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
 }
-.mobile-menu-close:hover { color: var(--amber-light); }
+
+.mobile-menu-close:hover {
+  background: rgba(201,133,58,0.3);
+  transform: rotate(90deg);
+}
 
 .mobile-nav-links {
   position: relative;
@@ -330,27 +374,39 @@ button { border: none; background: none; font-family: inherit; }
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
+  width: 100%;
 }
 
 .mobile-nav-link {
-  font-family: var(--font-display);
-  font-size: 2rem;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
   color: var(--text-muted);
-  transition: color 0.3s;
-  padding: 0.25rem 1rem;
+  transition: all 0.3s;
+  padding: 0.35rem 1.5rem;
+  border-radius: 100px;
 }
-.mobile-nav-link:hover { color: var(--amber-light); }
 
-.mobile-cta {
+.mobile-nav-link:hover, .mobile-nav-link.active {
+  color: var(--amber-light);
+  background: rgba(201,133,58,0.12);
+  border: 1px solid rgba(201,133,58,0.3);
+}
+
+.mobile-menu-footer {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: auto;
 }
 
 .mobile-footer-note {
   position: relative;
   z-index: 2;
   font-size: 0.65rem;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-faint);
 }
@@ -2175,40 +2231,118 @@ section + section {
   background: var(--bg-dark);
 }
 
-.het-grid {
+.hexp-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   margin-bottom: 2.5rem;
 }
 
-@media (max-width: 800px) {
-  .het-grid { grid-template-columns: 1fr; }
+@media (max-width: 768px) {
+  .hexp-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
-.het-card {
-  background: rgba(38,26,13,0.4);
-  border: 1px solid rgba(201,133,58,0.15);
-  border-radius: 18px;
+.hexp-card {
+  background: rgba(38,26,13,0.5);
+  border: 1px solid rgba(201,133,58,0.18);
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s var(--ease-expo), border-color 0.4s, box-shadow 0.4s;
+}
+
+.hexp-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(201,133,58,0.4);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+}
+
+.hexp-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.hexp-img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+  transition: transform 1.2s var(--ease-expo);
+}
+
+.hexp-card:hover .hexp-img {
+  transform: scale(1.07);
+}
+
+.hexp-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(18,13,7,0.85) 0%, transparent 50%);
+}
+
+.hexp-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--amber-light);
+  background: rgba(18,13,7,0.8);
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  border: 1px solid rgba(201,133,58,0.3);
+  backdrop-filter: blur(8px);
+}
+
+.hexp-body {
   padding: 1.75rem 1.5rem;
-  transition: transform 0.4s var(--ease-expo), border-color 0.4s;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.het-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(201,133,58,0.35);
+.hexp-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
 }
 
-.het-icon-wrap {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+.hexp-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
   background: rgba(201,133,58,0.12);
   border: 1px solid rgba(201,133,58,0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.25rem;
+}
+
+.hexp-num {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--amber-light);
+  opacity: 0.7;
+}
+
+.hexp-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--text-bright);
+  margin-bottom: 0.4rem;
+}
+
+.hexp-desc {
+  font-size: 0.88rem;
+  color: var(--text-sub);
+  line-height: 1.6;
 }
 
 .het-title {
