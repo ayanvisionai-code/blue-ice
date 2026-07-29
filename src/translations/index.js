@@ -1,12 +1,24 @@
 /*
-  Translations for Blue Ice — Lakhey Lachen Homestay
-  Bengali copy is written for emotional resonance, not literal translation.
-  It reads as original professional copywriting crafted for Bengali-speaking visitors.
+  Translations — Blue Ice / Lakhey Lachen Homestay
+  ──────────────────────────────────────────────────
+  BENGALI PHILOSOPHY:
+  The Bengali content is NOT a translation of the English.
+  It is written as fully independent original copywriting
+  for a Bengali literary sensibility — drawing inspiration from:
+    • Rabindranath Tagore's sense of surrender and stillness
+    • Jibanananda Das's love of nature and quiet belonging
+    • Shakti Chattopadhyay's longing and homecoming
+  The goal is emotional depth, cultural resonance, and originality.
 */
 
 const t = {
+
+  /* ══════════════════════════════════════════════════════════
+     ENGLISH
+     ══════════════════════════════════════════════════════════ */
   en: {
-    /* ─── NAV ────────────────────────────────────────────── */
+
+    /* NAV */
     nav: {
       home: 'Home',
       stays: 'Stays',
@@ -14,15 +26,15 @@ const t = {
       story: 'Our Story',
       contact: 'Contact',
       book: 'Book Your Stay',
-      langLabel: 'বাং',
-      langFull: 'বাংলা',
+      langLabel: '\u09AC\u09BE\u0982',
+      langFull: '\u09AC\u09BE\u0982\u09B2\u09BE',
     },
 
-    /* ─── HERO ───────────────────────────────────────────── */
+    /* HERO */
     hero: {
-      location: 'Lower Burmaik · Munsong · 3,800 ft',
+      location: 'Lower Burmaik \u00B7 Munsong \u00B7 3,800 ft',
       line1: 'Where the Clouds Rest',
-      line2: '& Your Soul Breathes.',
+      line2: '\u0026 Your Soul Breathes.',
       sub: 'Perched at 3,800 feet in Munsong. A private family sanctuary built on warm hearths, home-grown meals, and unfiltered mountain silence.',
       cta1: 'Reserve Your Stay',
       cta2: 'Explore Our Story',
@@ -31,7 +43,7 @@ const t = {
       trust3: 'Authentic Family Home',
     },
 
-    /* ─── HOME: WELCOME TEASER ───────────────────────────── */
+    /* HOME WELCOME */
     welcome: {
       eyebrow: 'A Private Himalayan Sanctuary',
       h2line1: 'Slow Down.',
@@ -39,16 +51,16 @@ const t = {
       desc: 'Lower Burmaik isn\u2019t just a destination on a map \u2014 it\u2019s a feeling you carry home. Here at 3,800 feet above sea level, the clamor of city life quietly dissolves into wood-smoke, pine-scented rain, and the first golden rays spilling across the Kanchenjunga horizon.',
       cta: 'Discover Our Full Story \u2192',
       badge: '3,800 ft Elevation',
-      badgeSub: 'Lower Burmaik · Kalimpong',
+      badgeSub: 'Lower Burmaik \u00B7 Kalimpong',
     },
 
-    /* ─── HOME: EXPERIENCES TEASER ──────────────────────── */
+    /* HOME EXPERIENCES TEASER */
     expTeaser: {
       eyebrow: 'Life at Altitude',
       h2line1: 'Moments That',
       h2line2: 'Stay With You',
       sub: 'Immerse yourself in the living rhythm of Lower Burmaik.',
-      cta: 'Explore All Experiences & Treks \u2192',
+      cta: 'Explore All Experiences \u0026 Treks \u2192',
       moments: [
         {
           num: '01', tag: 'Every Morning',
@@ -73,13 +85,13 @@ const t = {
       ],
     },
 
-    /* ─── HOME: GALLERY STRIP ────────────────────────────── */
+    /* HOME GALLERY STRIP */
     galleryStrip: {
       eyebrow: 'Signature Impressions',
       h2line1: 'Glimpses of',
       h2line2: 'Stillness',
       sub: 'A visual glimpse into our mountain homestay.',
-      cta: 'Read Our Full Story & Heritage \u2192',
+      cta: 'Read Our Full Story \u0026 Heritage \u2192',
       photos: [
         { caption: 'No alarm clocks. Just mountain light.' },
         { caption: 'Where morning fog embraces the ridge.' },
@@ -90,22 +102,22 @@ const t = {
       ],
     },
 
-    /* ─── HOME: WHY TEASER ───────────────────────────────── */
+    /* HOME WHY TEASER */
     whyTeaser: {
       eyebrow: 'The Lakhey Promise',
       h2: 'Not a Hotel. A Home That Remembers You.',
-      sub: '100% Organic Farm Kitchen · 3,800 ft Cloudline Vistas · Genuine Sikkim Hospitality',
+      sub: '100% Organic Farm Kitchen \u00B7 3,800 ft Cloudline Vistas \u00B7 Genuine Sikkim Hospitality',
       cta: 'Discover Why Guests Return \u2192',
     },
 
-    /* ─── STAYS PAGE ─────────────────────────────────────── */
+    /* STAYS PAGE */
     staysPage: {
       eyebrow: 'Sanctuaries Above the Mist',
-      h1: 'Crafted for Rest & Reflection',
+      h1: 'Crafted for Rest \u0026 Reflection',
       sub: 'Handcrafted cedar suites designed with natural warmth, private verandahs, and unfiltered vistas of the Kanchenjunga horizon.',
     },
     featuredStay: {
-      eyebrow: 'Crafted for Rest & Reflection',
+      eyebrow: 'Crafted for Rest \u0026 Reflection',
       h2line1: 'Sanctuaries in',
       h2line2: 'the Clouds',
       sub: 'Thoughtfully designed mountain rooms built with natural cedar timber and genuine Himalayan warmth.',
@@ -116,7 +128,7 @@ const t = {
         {
           name: 'Cloudline Suite',
           tag: 'Mountain View',
-          capacity: '2 Guests · King Bed',
+          capacity: '2 Guests \u00B7 King Bed',
           size: '320 sq.ft',
           desc: 'Floor-to-ceiling glass framing the Kanchenjunga horizon. Fall asleep to mountain crickets, wake to soft clouds drifting past your windowsill.',
           features: ['Private Verandah', 'Farm Breakfast Included', 'Heated Electric Blanket', 'Unfiltered Mountain Panorama'],
@@ -124,7 +136,7 @@ const t = {
         {
           name: 'Heritage Loft',
           tag: 'Signature Haven',
-          capacity: '2–3 Guests · Queen + Daybed',
+          capacity: '2\u20133 Guests \u00B7 Queen + Daybed',
           size: '410 sq.ft',
           desc: 'Reclaimed cedar woodwork, hand-loomed hill textiles, and a private stone fireplace carrying the warmth of mountain winters past.',
           features: ['Stone Fireplace', 'Handcrafted Cedar Details', 'Verandah Tea Lounge', 'All Meals Included Option'],
@@ -132,7 +144,7 @@ const t = {
         {
           name: 'Forest Cottage',
           tag: 'Rhododendron Sanctuary',
-          capacity: '2 Guests · Double Bed',
+          capacity: '2 Guests \u00B7 Double Bed',
           size: '280 sq.ft',
           desc: 'Tucked beneath ancient rhododendron trees. A quiet, secluded corner where wild birdsong is your only morning alarm.',
           features: ['Pine Forest View', 'Private Entrance', 'Continuous Hot Water', 'Birdwatching Porch'],
@@ -148,10 +160,10 @@ const t = {
       ],
     },
 
-    /* ─── EXPERIENCES PAGE ───────────────────────────────── */
+    /* EXPERIENCES PAGE */
     expPage: {
       eyebrow: 'Unhurried Himalayan Life',
-      h1: 'Moments Written in Mist & Light',
+      h1: 'Moments Written in Mist \u0026 Light',
       sub: 'From sunrise tea above the cloudline to starlit wood bonfires and quiet tea-garden walks \u2014 step into the living rhythm of Lower Burmaik.',
     },
     featuredExp: {
@@ -184,7 +196,7 @@ const t = {
         },
       ],
       acts: [
-        { title: 'Pine Forest Treks', detail: '1.5 hrs · Local trails' },
+        { title: 'Pine Forest Treks', detail: '1.5 hrs \u00B7 Local trails' },
         { title: 'Teesta River View', detail: '20 min scenic drive' },
         { title: 'Monastery Visits', detail: '30 min drive' },
         { title: 'Organic Farm Harvest', detail: 'In Homestay Garden' },
@@ -193,10 +205,10 @@ const t = {
       ],
     },
 
-    /* ─── STORY PAGE ─────────────────────────────────────── */
+    /* STORY PAGE */
     storyPage: {
-      eyebrow: 'Lower Burmaik · Munsong · 3,800 ft',
-      h1: 'Our Family Story & Heritage',
+      eyebrow: 'Lower Burmaik \u00B7 Munsong \u00B7 3,800 ft',
+      h1: 'Our Family Story \u0026 Heritage',
       sub: 'For generations, our family has guarded these quiet ridges. Discover our heritage, farm-to-table kitchen, and open-hearted hill hospitality.',
     },
     introduction: {
@@ -206,11 +218,11 @@ const t = {
       lead: 'For generations, our family has called these mist-wrapped ridges home. We built Blue Ice not as a commercial resort, but as an open-hearted hearth for travelers seeking authentic Sikkim warmth.',
       body: 'Here, meals are prepared with vegetables picked fresh from our own organic terrace farm. Conversations unfold over wood-fired tea, and your hosts remember your name, your preferences, and your stories.',
       stat1: '100%', stat1Label: 'Organic Farm Kitchen',
-      stat2: '4.9★', stat2Label: 'Guest Hospitality Rating',
-      stat3: '0', stat3Label: 'City Noise & Traffic',
+      stat2: '4.9\u2605', stat2Label: 'Guest Hospitality Rating',
+      stat3: '0', stat3Label: 'City Noise \u0026 Traffic',
       cta: 'Plan Your Journey \u2192',
       badgeAlt: '3,800', badgeUnit: 'FT',
-      badgeLabel: 'Lower Burmaik · Munsong',
+      badgeLabel: 'Lower Burmaik \u00B7 Munsong',
     },
     gallery: {
       eyebrow: 'Signature Gallery',
@@ -252,7 +264,7 @@ const t = {
       ],
     },
 
-    /* ─── CONTACT PAGE ───────────────────────────────────── */
+    /* CONTACT PAGE */
     contactPage: {
       eyebrow: 'Your Table by the Fire is Waiting',
       h1: 'Reserve Your Sanctuary',
@@ -274,12 +286,12 @@ const t = {
       loc1h: 'By Air \u2014 Bagdogra Airport (IXB)',
       loc1p: 'Approx. 85 km / 3 hours scenic drive through the Teesta River valley.',
       loc2h: 'By Rail \u2014 NJP Station',
-      loc2p: 'Approx. 80 km / 2.5\u20133 hours drive via Sevoke Bridge & Kalimpong route.',
+      loc2p: 'Approx. 80 km / 2.5\u20133 hours drive via Sevoke Bridge \u0026 Kalimpong route.',
       loc3h: 'Private Homestay Transfer',
       loc3p: 'We arrange private pre-booked cabs directly from NJP or Bagdogra straight to our doorstep.',
     },
 
-    /* ─── FINAL CTA ──────────────────────────────────────── */
+    /* FINAL CTA */
     finalCta: {
       eyebrow: 'Your Mountain Escape Awaits',
       h2line1: 'Ready to Step Above',
@@ -292,7 +304,7 @@ const t = {
       trust3: 'Free Cancellation Option',
     },
 
-    /* ─── FOOTER ─────────────────────────────────────────── */
+    /* FOOTER */
     footer: {
       tagline: 'A family home in Lower Burmaik, Munsong, Kalimpong \u2014 where strangers become family.',
       colExplore: 'Explore',
@@ -301,347 +313,359 @@ const t = {
       linkStays: 'Stay Collection',
       linkExp: 'Experiences',
       linkStory: 'Our Story',
-      linkContact: 'Contact & Book',
+      linkContact: 'Contact \u0026 Book',
       linkWhatsApp: 'Reserve via WhatsApp',
-      copyright: '\u00A9 2025 Lakhey Lachen Homestay by Blue Ice · All Rights Reserved',
+      copyright: '\u00A9 2025 Lakhey Lachen Homestay by Blue Ice \u00B7 All Rights Reserved',
       madeWith: 'Crafted with',
       madeIn: 'in the Himalayas',
     },
 
-    /* ─── MOBILE MENU ────────────────────────────────────── */
+    /* MOBILE MENU */
     mobileMenu: {
       links: [
-        { label: 'Home', sub: 'Welcome & Overview' },
-        { label: 'Stay Collection', sub: 'Suites & Accommodations' },
-        { label: 'Himalayan Experiences', sub: 'Moments & Excursions' },
-        { label: 'Our Story & Legacy', sub: 'Heritage & Gallery' },
-        { label: 'Contact & Reservations', sub: 'Direct Booking' },
+        { label: 'Home', sub: 'Welcome \u0026 Overview' },
+        { label: 'Stay Collection', sub: 'Suites \u0026 Accommodations' },
+        { label: 'Himalayan Experiences', sub: 'Moments \u0026 Excursions' },
+        { label: 'Our Story \u0026 Legacy', sub: 'Heritage \u0026 Gallery' },
+        { label: 'Contact \u0026 Reservations', sub: 'Direct Booking' },
       ],
       cta: 'Plan Your Stay \u2192',
-      location: 'Lower Burmaik · Munsong · Kalimpong',
+      location: 'Lower Burmaik \u00B7 Munsong \u00B7 Kalimpong',
     },
+
   },
 
-  /* ════════════════════════════════════════════════════════
-     BENGALI — Written as original professional copywriting,
-     emotionally resonant for Bengali-speaking visitors.
-     ════════════════════════════════════════════════════════ */
+
+  /* ══════════════════════════════════════════════════════════
+     BENGALI
+     Written as fully independent original content.
+     Inspired by Tagore, Jibanananda Das, Shakti Chattopadhyay.
+     NOT a translation of English — a new voice, a new feeling.
+     ══════════════════════════════════════════════════════════ */
   bn: {
-    /* ─── NAV ────────────────────────────────────────────── */
+
+    /* NAV */
     nav: {
-      home: 'হোম',
-      stays: 'থাকার ব্যবস্থা',
-      experiences: 'অভিজ্ঞতা',
-      story: 'আমাদের গল্প',
-      contact: 'যোগাযোগ',
-      book: 'আপনার থাকা বুক করুন',
+      home: '\u09AA\u09CD\u09B0\u09A5\u09AE \u09AA\u09BE\u09A4\u09BE',
+      stays: '\u09A5\u09BE\u0995\u09C1\u09A8 \u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09B8\u09BE\u09A5\u09C7',
+      experiences: '\u0985\u09A8\u09C1\u09AD\u09AC \u0995\u09B0\u09C1\u09A8',
+      story: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u0997\u09B2\u09CD\u09AA',
+      contact: '\u0995\u09A5\u09BE \u09AC\u09B2\u09C1\u09A8',
+      book: '\u0986\u09B8\u09C1\u09A8, \u09A6\u09B0\u099C\u09BE \u0996\u09CB\u09B2\u09BE \u0986\u099B\u09C7',
       langLabel: 'EN',
       langFull: 'English',
     },
 
-    /* ─── HERO ───────────────────────────────────────────── */
+    /* HERO
+       Inspired by Jibanananda Das: "Abar asibo phire Dhansiriti tire" (I shall return)
+       and Tagore's call to stillness — not a translation, a new invitation */
     hero: {
-      location: 'লোয়ার বর্মায়েক · মুনসং · ৩,৮০০ ফুট',
-      line1: 'যেখানে মেঘ বিশ্রাম নেয়',
-      line2: 'আর আত্মা নিঃশ্বাস ফেলে।',
-      sub: 'মুনসং-এর ৩,৮০০ ফুট উচ্চতায় — পাহাড়ের নিজস্ব উষ্ণতায়, ঘরের রান্নায়, আর হিমালয়ের নিঃশব্দতায় গড়া এক পারিবারিক আশ্রয়।',
-      cta1: 'আপনার থাকা নিশ্চিত করুন',
-      cta2: 'আমাদের গল্প জানুন',
-      trust1: '৪.৯ অতিথি রেটিং',
-      trust2: '৩,৮০০ ফুট উচ্চতা',
-      trust3: 'খাঁটি পারিবারিক গৃহ',
+      location: '\u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995 \u00B7 \u09AE\u09C1\u09A8\u09B8\u0982 \u00B7 \u09E9,\u09EE\u09E6\u09E6 \u09AB\u09C1\u099F',
+      line1: '\u09B6\u09B9\u09B0\u09C7\u09B0 \u09B6\u09CB\u09B0 \u09AB\u09C7\u09B2\u09C7 \u098F\u0995\u09A6\u09BF\u09A8',
+      line2: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u0995\u09BE\u099B\u09C7 \u09AB\u09BF\u09B0\u09C7 \u0986\u09B8\u09C1\u09A8\u0964',
+      sub: '\u0995\u09BE\u099E\u09CD\u099A\u09A8\u099C\u0999\u09CD\u0998\u09BE\u09B0 \u099B\u09BE\u09AF\u09BC\u09BE\u09AF\u09BC \u09AE\u09C1\u09A8\u09B8\u0982-\u098F\u09B0 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7 \u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0 \u0986\u09AA\u09A8\u09BE\u09B0 \u099C\u09A8\u09CD\u09AF \u0989\u09A8\u09C1\u09A8 \u099C\u09CD\u09AC\u09BE\u09B2\u09BF\u09AF\u09BC\u09C7 \u09B0\u09C7\u0996\u09C7\u099B\u09C7\u0964 \u098F\u0996\u09BE\u09A8\u09C7 \u09B8\u09AE\u09AF\u09BC \u098F\u0995\u099F\u09C1 \u09A7\u09C0\u09B0\u09C7 \u099A\u09B2\u09C7 \u2014 \u0986\u09B0 \u09B8\u09C7\u099F\u09BE\u0987 \u098F\u09B0 \u09B8\u09AC\u099A\u09C7\u09AF\u09BC\u09C7 \u09AC\u09A1\u09BC \u09B8\u09AE\u09CD\u09AA\u09A6\u0964',
+      cta1: '\u0986\u09B8\u09C1\u09A8, \u099C\u09BE\u09AF\u09BC\u0997\u09BE \u09B0\u09BE\u0996\u09C1\u09A8',
+      cta2: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u0997\u09B2\u09CD\u09AA \u09B6\u09C1\u09A8\u09C1\u09A8',
+      trust1: '\u09EA.\u09EF \u0985\u09A4\u09BF\u09A5\u09BF \u09AE\u09C2\u09B2\u09CD\u09AF\u09BE\u09AF\u09BC\u09A8',
+      trust2: '\u09E9,\u09EE\u09E6\u09E6 \u09AB\u09C1\u099F \u0989\u099A\u09CD\u099A\u09A4\u09BE\u09AF\u09BC',
+      trust3: '\u098F\u0995\u099F\u09BF \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0\u09C7\u09B0 \u0986\u09AA\u09A8 \u0998\u09B0',
     },
 
-    /* ─── HOME: WELCOME TEASER ───────────────────────────── */
+    /* HOME WELCOME
+       Tagore: "Amar matha nato kore dao he" — surrender, humility before nature */
     welcome: {
-      eyebrow: 'একটি ব্যক্তিগত হিমালয়ান আশ্রয়',
-      h2line1: 'একটু থামুন।',
-      h2line2: 'আপনি পৌঁছে গেছেন।',
-      desc: 'লোয়ার বর্মায়েক শুধু একটি গন্তব্য নয় — এটি এমন একটি অনুভূতি যা বাড়ি ফেরার পরেও মনে থেকে যায়। সমুদ্রপৃষ্ঠ থেকে ৩,৮০০ ফুট উপরে, শহরের কোলাহল মিলিয়ে যায় কাঠের ধোঁয়া, পাইনের বৃষ্টিজল আর কাঞ্চনজঙ্ঘার সোনালি প্রথম আলোয়।',
-      cta: 'আমাদের সম্পূর্ণ গল্প জানুন →',
-      badge: '৩,৮০০ ফুট উচ্চতা',
-      badgeSub: 'লোয়ার বর্মায়েক · কালিম্পং',
+      eyebrow: '\u09B9\u09BF\u09AE\u09BE\u09B2\u09AF\u09BC\u09C7\u09B0 \u0995\u09CB\u09B2\u09C7 \u098F\u0995 \u09A8\u09BF\u09AD\u09C3\u09A4 \u0986\u09B6\u09CD\u09B0\u09AF\u09BC',
+      h2line1: '\u098F\u0996\u09BE\u09A8\u09C7 \u09B8\u09AE\u09AF\u09BC \u09A5\u09BE\u09AE\u09C7\u0964',
+      h2line2: '\u09AE\u09A8 \u09AD\u09B0\u09C7 \u0993\u09A0\u09C7\u0964',
+      desc: '\u09B0\u09AC\u09C0\u09A8\u09CD\u09A6\u09CD\u09B0\u09A8\u09BE\u09A5 \u09B2\u09BF\u0996\u09C7\u099B\u09BF\u09B2\u09C7\u09A8 \u2014 \u201C\u0986\u09AE\u09BE\u09B0 \u09AE\u09BE\u09A5\u09BE \u09A8\u09A4 \u0995\u09B0\u09C7 \u09A6\u09BE\u0993, \u09B9\u09C7 \u09A4\u09CB\u09AE\u09BE\u09B0 \u099A\u09B0\u09A3-\u09A7\u09C2\u09B2\u09BE\u09B0 \u09A4\u09B2\u09C7\u0964\u201D \u0995\u09BE\u09B2\u09BF\u09AE\u09CD\u09AA\u0982-\u098F\u09B0 \u098F\u0987 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7 \u09AA\u09BE \u09B0\u09BE\u0996\u09B2\u09C7 \u09B8\u09C7\u0987 \u09A8\u09AE\u09A8\u09C0\u09AF\u09BC\u09A4\u09BE \u0985\u09A8\u09C1\u09AD\u09AC \u09B9\u09AF\u09BC \u2014 \u09AA\u09CD\u09B0\u0995\u09C3\u09A4\u09BF\u09B0 \u0995\u09BE\u099B\u09C7, \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0\u09C7\u09B0 \u0995\u09BE\u099B\u09C7, \u09A8\u09BF\u099C\u09C7\u09B0 \u0995\u09BE\u099B\u09C7\u0964 \u0989\u09A8\u09C1\u09A8\u09C7\u09B0 \u09A7\u09CB\u0981\u09AF\u09BC\u09BE, \u09AC\u09C3\u09B7\u09CD\u099F\u09BF\u09B0 \u09AA\u09BE\u0987\u09A8-\u0997\u09A8\u09CD\u09A7 \u0986\u09B0 \u09AD\u09CB\u09B0\u09C7\u09B0 \u09B8\u09CB\u09A8\u09BE\u09B2\u09BF \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC 2014 \u098F\u0987 \u09B8\u09CD\u09AE\u09C3\u09A4\u09BF \u09AC\u09BE\u09A1\u09BC\u09BF \u09AB\u09C7\u09B0\u09BE\u09B0 \u09AA\u09B0\u09C7\u0993 \u09AC\u09C1\u0995\u09C7 \u09A5\u09BE\u0995\u09C7\u0964',
+      cta: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09AA\u09BE\u09B0\u09BF\u09AC\u09BE\u09B0\u09BF\u0995 \u0997\u09B2\u09CD\u09AA \u09AA\u09A1\u09BC\u09C1\u09A8 \u2192',
+      badge: '\u09E9,\u09EE\u09E6\u09E6 \u09AB\u09C1\u099F \u0989\u099A\u09CD\u099A\u09A4\u09BE\u09AF\u09BC',
+      badgeSub: '\u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995 \u00B7 \u0995\u09BE\u09B2\u09BF\u09AE\u09CD\u09AA\u0982',
     },
 
-    /* ─── HOME: EXPERIENCES TEASER ──────────────────────── */
+    /* HOME EXPERIENCES TEASER
+       Jibanananda Das: "Ei jibon onek boro — aar onek norom ghaser gondho" */
     expTeaser: {
-      eyebrow: 'উচ্চতার জীবন',
-      h2line1: 'যে মুহূর্তগুলো',
-      h2line2: 'থেকে যায় মনে',
-      sub: 'লোয়ার বর্মায়েকের প্রতিটি মুহূর্তে নিজেকে হারিয়ে ফেলুন।',
-      cta: 'সমস্ত অভিজ্ঞতা ও ট্রেক দেখুন →',
+      eyebrow: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u099B\u09A8\u09CD\u09A6\u09C7 \u099C\u09C0\u09AC\u09A8',
+      h2line1: '\u0995\u09BF\u099B\u09C1 \u09AE\u09C1\u09B9\u09C2\u09B0\u09CD\u09A4',
+      h2line2: '\u09AC\u09C1\u0995\u09C7 \u0997\u09C7\u0981\u09A5\u09C7 \u09A5\u09BE\u0995\u09C7',
+      sub: '\u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995\u09C7\u09B0 \u09AA\u09CD\u09B0\u09A4\u09BF\u099F\u09BF \u09AD\u09CB\u09B0, \u09AA\u09CD\u09B0\u09A4\u09BF\u099F\u09BF \u09B8\u09A8\u09CD\u09A7\u09CD\u09AF\u09BE \u2014 \u098F\u0995\u09C7\u0995\u099F\u09BF \u099B\u09CB\u099F\u09CD\u099F \u0995\u09AC\u09BF\u09A4\u09BE\u09B0 \u09AE\u09A4\u09CB\u0964',
+      cta: '\u09B8\u09AC \u0985\u09AD\u09BF\u099C\u09CD\u099E\u09A4\u09BE \u09A6\u09C7\u0996\u09C1\u09A8 \u2192',
       moments: [
         {
-          num: '০১', tag: 'প্রতিটি ভোরে',
-          title: 'মেঘের উপর সূর্যোদয়',
-          desc: 'উপত্যকা জাগার আগেই জেগে উঠুন। পাহাড়ি চায়ের কাপ হাতে কাঞ্চনজঙ্ঘার শৃঙ্গে সোনালি আলো ঢেলে পড়া দেখুন।',
+          num: '\u09E6\u09E7', tag: '\u09AA\u09CD\u09B0\u09A4\u09BF\u099F\u09BF \u09AD\u09CB\u09B0\u09AC\u09C7\u09B2\u09BE',
+          title: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7 \u09AD\u09CB\u09B0 \u09B9\u09AF\u09BC \u09A7\u09C0\u09B0\u09C7 \u09A7\u09C0\u09B0\u09C7',
+          desc: '\u09AF\u0996\u09A8 \u0989\u09AA\u09A4\u09CD\u09AF\u0995\u09BE \u098F\u0996\u09A8\u09CB \u0998\u09C1\u09AE\u09C7, \u09A4\u0996\u09A8 \u0995\u09BE\u099E\u09CD\u099A\u09A8\u099C\u0999\u09CD\u0998\u09BE\u09B0 \u099A\u09C2\u09A1\u09BC\u09BE\u09AF\u09BC \u09B0\u0982 \u09A7\u09B0\u09C7 \u2014 \u09B9\u09BE\u09A4\u09C7 \u098F\u0995\u099F\u09C1\u0996\u09BE\u09A8\u09BF \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09BF \u099A\u09BE, \u099A\u09CB\u0996\u09C7 \u09B8\u09C7\u0987 \u09AA\u09CD\u09B0\u09A5\u09AE \u0986\u09B2\u09CB\u0964',
         },
         {
-          num: '০২', tag: 'প্রতিটি রাতে',
-          title: 'তারায় ভরা আগুনের সন্ধ্যা',
-          desc: 'পাইন গাছের ভেতর দিয়ে সন্ধ্যার কুয়াশা নামলে, কাঠের আগুনের পাশে জড়ো হন — মাথার উপর অগণিত তারা।',
+          num: '\u09E6\u09E8', tag: '\u09AA\u09CD\u09B0\u09A4\u09BF\u099F\u09BF \u09B0\u09BE\u09A4\u09C7',
+          title: '\u0986\u0997\u09C1\u09A8\u09C7\u09B0 \u09AA\u09BE\u09B6\u09C7, \u09A4\u09BE\u09B0\u09BE\u09B0 \u09A8\u09BF\u099A\u09C7',
+          desc: '\u09AA\u09BE\u0987\u09A8\u09C7\u09B0 \u09AC\u09A8\u09C7 \u09AF\u0996\u09A8 \u0995\u09C1\u09AF\u09BC\u09BE\u09B6\u09BE \u09A8\u09BE\u09AE\u09C7, \u09A4\u0996\u09A8 \u0995\u09BE\u09A0\u09C7\u09B0 \u0986\u0997\u09C1\u09A8 \u099C\u09CD\u09AC\u09B2\u09C7 \u0993\u09A0\u09C7\u0964 \u09AE\u09BE\u09A5\u09BE\u09B0 \u0989\u09AA\u09B0\u09C7 \u09B6\u09B9\u09C1\u09B0\u09C7 \u0986\u09B2\u09CB\u09B0 \u09AD\u09BF\u09A1\u09BC \u09A8\u09C7\u0987 \u2014 \u09B6\u09C1\u09A7\u09C1 \u09A4\u09BE\u09B0\u09BE, \u09B6\u09C1\u09A7\u09C1 \u09A8\u09C0\u09B0\u09AC\u09A4\u09BE\u0964',
         },
         {
-          num: '০৩', tag: 'বাড়ি থেকে ২ কিমি',
-          title: 'কুয়াশায় ঢাকা চা-বাগানের পথ',
-          desc: 'মুনসং-এর ধাপে ধাপে সাজানো চা-বাগানে হাঁটুন। বৃষ্টি-ধোয়া বাতাসে পাইন আর তাজা চায়ের পাতার সুবাস।',
+          num: '\u09E6\u09E9', tag: '\u09AC\u09BE\u09A1\u09BC\u09BF \u09A5\u09C7\u0995\u09C7 \u09A6\u09C1\u0987 \u09AA\u09BE',
+          title: '\u099A\u09BE-\u09AC\u09BE\u0997\u09BE\u09A8\u09C7\u09B0 \u09B6\u09BF\u09B6\u09BF\u09B0-\u09AD\u09C7\u099C\u09BE \u09AA\u09A5',
+          desc: '\u09AE\u09C1\u09A8\u09B8\u0982-\u098F\u09B0 \u09B8\u09AC\u09C1\u099C \u09A2\u09BE\u09B2\u09C7 \u09B9\u09BE\u0981\u099F\u09A4\u09C7 \u09B9\u09BE\u0981\u099F\u09A4\u09C7 \u09AE\u09A8\u09C7 \u09B9\u09AF\u09BC \u09AA\u09C3\u09A5\u09BF\u09AC\u09C0\u099F\u09BE \u0985\u09A8\u09C7\u0995 \u09B8\u09B9\u099C\u0964 \u09AA\u09BE\u09A4\u09BE\u09AF\u09BC \u09AC\u09C3\u09B7\u09CD\u099F\u09BF\u09B0 \u0997\u09A8\u09CD\u09A7, \u09B9\u09BE\u0993\u09AF\u09BC\u09BE\u09AF\u09BC \u09A4\u09BE\u099C\u09BE \u099A\u09BE\u09AF\u09BC\u09C7\u09B0 \u09B8\u09C1\u09AC\u09BE\u09B8\u0964',
         },
         {
-          num: '০৪', tag: 'পথের বাইরে',
-          title: 'গোপন পাহাড়ি ঝরনা',
-          desc: 'গ্রামের বয়স্কদের চেনা গোপন বনপথ ধরে এগিয়ে যান — যেখানে পাহাড়ি ঝরনা শান্তভাবে বয়ে চলে।',
+          num: '\u09E6\u09EA', tag: '\u0997\u09CB\u09AA\u09A8 \u09AA\u09A5\u09C7\u09B0 \u09B6\u09C7\u09B7\u09C7',
+          title: '\u09AF\u09C7 \u099D\u09B0\u09A8\u09BE\u09B0 \u0995\u09A5\u09BE \u09AE\u09BE\u09A8\u099A\u09BF\u09A4\u09CD\u09B0\u09C7 \u09A8\u09C7\u0987',
+          desc: '\u0997\u09CD\u09B0\u09BE\u09AE\u09C7\u09B0 \u09AA\u09CD\u09B0\u09AC\u09C0\u09A3\u09A6\u09C7\u09B0 \u099C\u09BE\u09A8\u09BE \u09B8\u09C7\u0987 \u09AC\u09A8\u09AA\u09A5 \u09A7\u09B0\u09C7 \u09AF\u09BE\u09A8 \u2014 \u09A8\u09BF\u09B0\u09CD\u099C\u09A8 \u0997\u09BF\u09B0\u09BF\u0996\u09BE\u09A6\u09C7 \u09B8\u09C7\u0987 \u099D\u09B0\u09A8\u09BE \u0986\u099C\u0993 \u09A8\u09BF\u099C\u09C7\u09B0 \u09AE\u09A4\u09CB \u09AC\u09AF\u09BC\u09C7 \u099A\u09B2\u09C7, \u09A8\u09BF\u0983\u09B6\u09AC\u09CD\u09A6\u09C7\u0964',
         },
       ],
     },
 
-    /* ─── HOME: GALLERY STRIP ────────────────────────────── */
+    /* HOME GALLERY STRIP
+       Shakti Chattopadhyay: "Abani bari acho?" (Abani, are you home?) */
     galleryStrip: {
-      eyebrow: 'বিশেষ মুহূর্তের ছবি',
-      h2line1: 'নিস্তব্ধতার',
-      h2line2: 'একটু আভাস',
-      sub: 'আমাদের পাহাড়ি হোমস্টের এক দৃশ্যময় ঝলক।',
-      cta: 'আমাদের সম্পূর্ণ গল্প ও ঐতিহ্য পড়ুন →',
+      eyebrow: '\u0995\u09AF\u09BC\u09C7\u0995\u099F\u09BF \u09AE\u09C1\u09B9\u09C2\u09B0\u09CD\u09A4\u09C7\u09B0 \u099B\u09AC\u09BF',
+      h2line1: '\u099A\u09C1\u09AA \u0995\u09B0\u09C7 \u09A5\u09BE\u0995\u09BE',
+      h2line2: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u09AD\u09BE\u09B7\u09BE',
+      sub: '\u09AF\u09BE \u0995\u09A5\u09BE\u09AF\u09BC \u09AC\u09B2\u09BE \u09AF\u09BE\u09AF\u09BC \u09A8\u09BE, \u099B\u09AC\u09BF \u09A4\u09BE \u09A7\u09B0\u09C7 \u09B0\u09BE\u0996\u09C7\u0964',
+      cta: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0\u09C7\u09B0 \u0997\u09B2\u09CD\u09AA \u09AA\u09A1\u09BC\u09C1\u09A8 \u2192',
       photos: [
-        { caption: 'ঘড়ির অ্যালার্ম নয় — শুধু পাহাড়ের আলো।' },
-        { caption: 'যেখানে সকালের কুয়াশা পাহাড়কে আলিঙ্গন করে।' },
-        { caption: 'নীরব চিন্তার পথ।' },
-        { caption: 'কাঠের আগুনে রান্না, ভালোবাসায় পরিবেশন।' },
-        { caption: 'শহরের আলো ছাড়া আকাশভরা তারা।' },
-        { caption: 'পাহাড়ি ঝরনার মৃদু ফিসফিস।' },
+        { caption: '\u0998\u09C1\u09AE \u09AD\u09BE\u0999\u09C7 \u09AA\u09BE\u0996\u09BF\u09B0 \u09A1\u09BE\u0995\u09C7, \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u0986\u09B2\u09CB\u09AF\u09BC\u0964' },
+        { caption: '\u0995\u09C1\u09AF\u09BC\u09BE\u09B6\u09BE \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u0995\u09C7 \u0986\u09B2\u09BF\u0999\u09CD\u0997\u09A8 \u0995\u09B0\u09C7 \u2014 \u09B0\u09CB\u099C \u09B8\u0995\u09BE\u09B2\u09C7\u0964' },
+        { caption: '\u09AA\u09A5 \u09B9\u09BE\u0981\u099F\u09B2\u09C7, \u09AE\u09A8 \u09B9\u09BE\u09B2\u0995\u09BE \u09B9\u09AF\u09BC\u0964' },
+        { caption: '\u09AE\u09BE\u09AF\u09BC\u09C7\u09B0 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE\u09B0 \u09AE\u09A4\u09CB \u2014 \u09AD\u09BE\u09B2\u09CB\u09AC\u09BE\u09B8\u09BE \u09AE\u09BF\u09B6\u09C7 \u09A5\u09BE\u0995\u09C7\u0964' },
+        { caption: '\u09B0\u09BE\u09A4\u09C7\u09B0 \u0986\u0995\u09BE\u09B6\u09C7 \u09A4\u09BE\u09B0\u09BE\u09B0\u09BE \u0995\u09A5\u09BE \u09AC\u09B2\u09C7\u0964' },
+        { caption: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u09AC\u09C1\u0995 \u099A\u09BF\u09B0\u09C7 \u09AC\u09AF\u09BC\u09C7 \u099A\u09B2\u09C7 \u09A8\u09BF\u09B0\u09CD\u09AE\u09B2 \u099C\u09B2\u09A7\u09BE\u09B0\u09BE\u0964' },
       ],
     },
 
-    /* ─── HOME: WHY TEASER ───────────────────────────────── */
+    /* HOME WHY TEASER */
     whyTeaser: {
-      eyebrow: 'লাখে লাচেনের প্রতিশ্রুতি',
-      h2: 'শুধু হোটেল নয়। একটি ঘর — যা আপনাকে মনে রাখে।',
-      sub: '১০০% জৈব খামারের রান্নাঘর · ৩,৮০০ ফুট মেঘের সৌন্দর্য · খাঁটি সিকিমি আতিথেয়তা',
-      cta: 'কেন অতিথিরা ফিরে আসেন জানুন →',
+      eyebrow: '\u09B2\u09BE\u0996\u09C7 \u09B2\u09BE\u099A\u09C7\u09A8\u09C7\u09B0 \u09AA\u09CD\u09B0\u09A4\u09BF\u09B6\u09CD\u09B0\u09C1\u09A4\u09BF',
+      h2: '\u098F\u099F\u09BF \u09B6\u09C1\u09A7\u09C1 \u09B9\u09CB\u099F\u09C7\u09B2 \u09A8\u09AF\u09BC \u2014 \u098F\u099F\u09BF \u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u0998\u09B0, \u0986\u09AA\u09A8\u09BE\u09B0 \u0986\u09B6\u09CD\u09B0\u09AF\u09BC\u0964',
+      sub: '\u09B6\u09A4\u09AD\u09BE\u0997 \u099C\u09C8\u09AC \u0996\u09BE\u09AE\u09BE\u09B0\u09C7\u09B0 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE \u00B7 \u09E9,\u09EE\u09E6\u09E6 \u09AB\u09C1\u099F \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09BF \u09A8\u09BF\u09B8\u09CD\u09A4\u09AC\u09CD\u09A7\u09A4\u09BE \u00B7 \u09AE\u09BE\u099F\u09BF\u09B0 \u0995\u09BE\u099B\u09C7\u09B0 \u09AE\u09BE\u09A8\u09C1\u09B7\u09C7\u09B0 \u0986\u09A4\u09BF\u09A5\u09C7\u09AF\u09BC\u09A4\u09BE',
+      cta: '\u0985\u09A4\u09BF\u09A5\u09BF\u09B0\u09BE \u0995\u09C7\u09A8 \u09AC\u09BE\u09B0\u09AC\u09BE\u09B0 \u09AB\u09C7\u09B0\u09C7\u09A8 \u2192',
     },
 
-    /* ─── STAYS PAGE ─────────────────────────────────────── */
+    /* STAYS PAGE */
     staysPage: {
-      eyebrow: 'কুয়াশার উপরের আশ্রয়',
-      h1: 'বিশ্রাম ও নিস্তব্ধতার জন্য তৈরি',
-      sub: 'প্রাকৃতিক উষ্ণতা, ব্যক্তিগত বারান্দা আর কাঞ্চনজঙ্ঘার দৃশ্য সহ হাতে তৈরি দেবদারু কাঠের স্যুট।',
+      eyebrow: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u09AC\u09C1\u0995\u09C7 \u0986\u09AA\u09A8\u09BE\u09B0 \u0998\u09B0',
+      h1: '\u098F\u0995\u099F\u09C1 \u09AC\u09BF\u09B6\u09CD\u09B0\u09BE\u09AE\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF, \u098F\u0995\u099F\u09C1 \u09A8\u09BF\u099C\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF',
+      sub: '\u09A6\u09C7\u09AC\u09A6\u09BE\u09B0\u09C1 \u0995\u09BE\u09A0\u09C7\u09B0 \u0989\u09B7\u09CD\u09A3\u09A4\u09BE\u09AF\u09BC, \u09AC\u09BE\u09B0\u09BE\u09A8\u09CD\u09A6\u09BE\u09B0 \u0995\u09BE\u099E\u09CD\u099C\u09A8\u099C\u0999\u09CD\u0998\u09BE\u09B0 \u09A6\u09C3\u09B6\u09CD\u09AF\u09C7 \u2014 \u098F\u0987 \u0998\u09B0\u0997\u09C1\u09B2\u09CB \u09A4\u09C8\u09B0\u09BF \u09B9\u09AF\u09BC\u09C7\u099B\u09C7 \u09B6\u09C1\u09A7\u09C1 \u0986\u09AA\u09A8\u09BE\u09B0 \u099C\u09A8\u09CD\u09AF\u0964',
     },
     featuredStay: {
-      eyebrow: 'বিশ্রাম ও নিস্তব্ধতার জন্য তৈরি',
-      h2line1: 'মেঘের মাঝে',
-      h2line2: 'আশ্রয়',
-      sub: 'প্রাকৃতিক দেবদারু কাঠ আর খাঁটি হিমালয়ের উষ্ণতায় তৈরি পাহাড়ি কক্ষ।',
-      amenitiesTitle: 'প্রতিটি থাকার সাথে যা পাবেন',
-      ctaCard: 'এই স্যুটটি বুক করুন →',
-      ctaBottom: 'কাস্টম উপলব্ধতা দেখুন →',
+      eyebrow: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u09AC\u09C1\u0995\u09C7 \u0986\u09AA\u09A8\u09BE\u09B0 \u0998\u09B0',
+      h2line1: '\u09AE\u09C7\u0998\u09C7\u09B0 \u0993\u09AA\u09BE\u09B0\u09C7',
+      h2line2: '\u0986\u09AA\u09A8\u09BE\u09B0 \u09AC\u09BF\u099B\u09BE\u09A8\u09BE',
+      sub: '\u09AA\u09CD\u09B0\u0995\u09C3\u09A4\u09BF\u09B0 \u09A6\u09C7\u09AC\u09A6\u09BE\u09B0\u09C1 \u0995\u09BE\u09A0, \u09B9\u09BE\u09A4\u09C7\u09B0 \u09AC\u09CB\u09A8\u09BE \u0995\u09BE\u09AA\u09A1\u09BC \u0986\u09B0 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u09A8\u09BF\u099C\u09B8\u09CD\u09AC \u0989\u09B7\u09CD\u09A3\u09A4\u09BE\u09AF\u09BC \u0997\u09A1\u09BC\u09BE \u0998\u09B0\u0964',
+      amenitiesTitle: '\u09AF\u09BE \u0986\u09AA\u09A8\u09BE\u09B0 \u09B8\u09BE\u09A5\u09C7\u0987 \u09A5\u09BE\u0995\u09AC\u09C7',
+      ctaCard: '\u098F\u0987 \u0998\u09B0\u099F\u09BF \u09B0\u09BE\u0996\u09C1\u09A8 \u2192',
+      ctaBottom: '\u0986\u09AA\u09A8\u09BE\u09B0 \u09B8\u09AE\u09AF\u09BC \u099C\u09BE\u09A8\u09C1\u09A8 \u2192',
       rooms: [
         {
-          name: 'ক্লাউডলাইন স্যুট',
-          tag: 'পাহাড়ের দৃশ্য',
-          capacity: '২ অতিথি · কিং বেড',
-          size: '৩২০ বর্গফুট',
-          desc: 'মেঝে থেকে ছাদ পর্যন্ত কাচের ভেতর দিয়ে কাঞ্চনজঙ্ঘার দৃশ্য। পাহাড়ের ঝিঁঝিঁ পোকার শব্দে ঘুমিয়ে পড়ুন, জানালার বাইরে ভেসে যাওয়া মেঘ দেখে জেগে উঠুন।',
-          features: ['ব্যক্তিগত বারান্দা', 'খামারের নাস্তা অন্তর্ভুক্ত', 'গরম বৈদ্যুতিক কম্বল', 'অবাধ পাহাড়ি দৃশ্য'],
+          name: '\u0995\u09CD\u09B2\u09BE\u0989\u09A1\u09B2\u09BE\u0987\u09A8 \u09B8\u09CD\u09AF\u09C1\u099F',
+          tag: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u09A6\u09C3\u09B6\u09CD\u09AF',
+          capacity: '\u09E8 \u099C\u09A8 \u00B7 \u0995\u09BF\u0982 \u09AC\u09C7\u09A1',
+          size: '\u09E9\u09E8\u09E6 \u09AC\u09B0\u09CD\u0997\u09AB\u09C1\u099F',
+          desc: '\u099C\u09BE\u09A8\u09BE\u09B2\u09BE \u0996\u09C1\u09B2\u09B2\u09C7\u0987 \u0995\u09BE\u099E\u09CD\u099A\u09A8\u099C\u0999\u09CD\u0998\u09BE\u0964 \u0998\u09C1\u09AE\u09CB\u09A8 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u099D\u09BF\u0981\u099D\u09BF\u0981\u09B0 \u09B8\u09C1\u09B0\u09C7, \u099C\u09C7\u0997\u09C7 \u0989\u09A0\u09C1\u09A8 \u09AE\u09C7\u0998 \u09AD\u09C7\u09B8\u09C7 \u09AF\u09BE\u0993\u09AF\u09BC\u09BE \u09A6\u09C7\u0996\u09A4\u09C7 \u09A6\u09C7\u0996\u09A4\u09C7\u0964 \u099C\u09C0\u09AC\u09A8\u09BE\u09A8\u09A8\u09CD\u09A6 \u09B2\u09BF\u0996\u09C7\u099B\u09BF\u09B2\u09C7\u09A8 \u201C\u09AC\u09BE\u0982\u09B2\u09BE\u09B0 \u09AE\u09C1\u0996 \u0986\u09AE\u09BF \u09A6\u09C7\u0996\u09BF\u09AF\u09BC\u09BE\u099B\u09BF\u201D \u2014 \u098F\u0987 \u099C\u09BE\u09A8\u09BE\u09B2\u09BE \u09B8\u09C7\u0987 \u09AE\u09C1\u0996\u09C7\u09B0\u0987 \u0986\u09B0\u09C7\u0995 \u09B0\u09C2\u09AA\u0964',
+          features: ['\u09A8\u09BF\u099C\u09B8\u09CD\u09AC \u09AC\u09BE\u09B0\u09BE\u09A8\u09CD\u09A6\u09BE', '\u0996\u09BE\u09AE\u09BE\u09B0\u09C7\u09B0 \u09B8\u0995\u09BE\u09B2\u09C7\u09B0 \u09A8\u09BE\u09B8\u09CD\u09A4\u09BE', '\u0997\u09B0\u09AE \u09AC\u09C8\u09A6\u09CD\u09AF\u09C1\u09A4\u09BF\u0995 \u0995\u09AE\u09CD\u09AC\u09B2', '\u0985\u0996\u09A3\u09CD\u09A1 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09BF \u09A6\u09BF\u0997\u09A8\u09CD\u09A4'],
         },
         {
-          name: 'হেরিটেজ লফট',
-          tag: 'বিশেষ আশ্রয়',
-          capacity: '২–৩ অতিথি · কুইন + ডে-বেড',
-          size: '৪১০ বর্গফুট',
-          desc: 'পুনর্ব্যবহৃত দেবদারু কাঠের কাজ, হাতে বোনা পাহাড়ি কাপড় আর পাথরের আগুনকুণ্ড — যেন পুরোনো পাহাড়ি শীতের উষ্ণতা।',
-          features: ['পাথরের আগুনকুণ্ড', 'হাতে তৈরি দেবদারু বিবরণ', 'বারান্দার চা-লাউঞ্জ', 'সমস্ত খাবার অন্তর্ভুক্তির বিকল্প'],
+          name: '\u09B9\u09C7\u09B0\u09BF\u099F\u09C7\u099C \u09B2\u09AB\u099F',
+          tag: '\u09AC\u09BF\u09B6\u09C7\u09B7 \u0986\u09B6\u09CD\u09B0\u09AF\u09BC',
+          capacity: '\u09E8\u2013\u09E9 \u099C\u09A8 \u00B7 \u0995\u09C1\u0987\u09A8 + \u09A1\u09C7-\u09AC\u09C7\u09A1',
+          size: '\u09EA\u09E7\u09E6 \u09AC\u09B0\u09CD\u0997\u09AB\u09C1\u099F',
+          desc: '\u09AA\u09C1\u09B0\u09A8\u09CB \u09A6\u09C7\u09AC\u09A6\u09BE\u09B0\u09C1 \u0995\u09BE\u09A0\u09C7\u09B0 \u0997\u09A8\u09CD\u09A7, \u09AA\u09BE\u09A5\u09B0\u09C7\u09B0 \u0989\u09A8\u09C1\u09A8\u09C7\u09B0 \u0989\u09B7\u09CD\u09A3\u09A4\u09BE \u2014 \u09AF\u09C7\u09A8 \u09B0\u09AC\u09C0\u09A8\u09CD\u09A6\u09CD\u09B0\u09A8\u09BE\u09A5\u09C7\u09B0 \u0995\u09CB\u09A8\u09CB \u0997\u09B2\u09CD\u09AA\u09C7\u09B0 \u09AC\u09A8\u09AC\u09BE\u09A1\u09BC\u09BF\u09A4\u09C7 \u098F\u09B8\u09C7 \u09AA\u09A1\u09BC\u09C7\u099B\u09C7\u09A8\u0964 \u09B6\u09C0\u09A4\u09C7\u09B0 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7 \u098F\u0987 \u0998\u09B0 \u09AF\u09C7\u09A8 \u09AC\u09C1\u0995\u09C7\u09B0 \u09AD\u09C7\u09A4\u09B0\u09C7 \u0986\u09B2\u09CB \u099C\u09CD\u09AC\u09BE\u09B2\u09BF\u09AF\u09BC\u09C7 \u09A6\u09C7\u09AF\u09BC\u0964',
+          features: ['\u09AA\u09BE\u09A5\u09B0\u09C7\u09B0 \u0986\u0997\u09C1\u09A8\u0995\u09C1\u09A3\u09CD\u09A1', '\u09B9\u09BE\u09A4\u09C7 \u09A4\u09C8\u09B0\u09BF \u09A6\u09C7\u09AC\u09A6\u09BE\u09B0\u09C1 \u0985\u09A8\u09CD\u09A6\u09B0\u09B8\u099C\u09CD\u099C\u09BE', '\u09AC\u09BE\u09B0\u09BE\u09A8\u09CD\u09A6\u09BE\u09B0 \u099A\u09BE-\u0995\u09CB\u09A3', '\u09B8\u09AC \u0996\u09BE\u09AC\u09BE\u09B0-\u09B8\u09B9 \u09AC\u09BF\u0995\u09B2\u09CD\u09AA'],
         },
         {
-          name: 'ফরেস্ট কটেজ',
-          tag: 'রডোডেনড্রন আশ্রয়',
-          capacity: '২ অতিথি · ডাবল বেড',
-          size: '২৮০ বর্গফুট',
-          desc: 'পুরনো রডোডেনড্রন গাছের ছায়ায় লুকানো। একটি শান্ত, নিভৃত কোণে যেখানে বনের পাখির গান আপনার সকালের আলার্ম।',
-          features: ['পাইন বনের দৃশ্য', 'ব্যক্তিগত প্রবেশদ্বার', 'অবিরাম গরম পানি', 'পাখি দেখার বারান্দা'],
+          name: '\u09AB\u09B0\u09C7\u09B8\u09CD\u099F \u0995\u099F\u09C7\u099C',
+          tag: '\u09B0\u09A1\u09CB\u09A1\u09C7\u09A8\u09CD\u09A1\u09CD\u09B0\u09A8\u09C7\u09B0 \u099B\u09BE\u09AF\u09BC\u09BE\u09AF\u09BC',
+          capacity: '\u09E8 \u099C\u09A8 \u00B7 \u09A1\u09BE\u09AC\u09B2 \u09AC\u09C7\u09A1',
+          size: '\u09E8\u09EE\u09E6 \u09AC\u09B0\u09CD\u0997\u09AB\u09C1\u099F',
+          desc: '\u09AA\u09C1\u09B0\u09A8\u09CB \u09B0\u09A1\u09CB\u09A1\u09C7\u09A8\u09CD\u09A1\u09CD\u09B0\u09A8 \u0997\u09BE\u099B\u09C7\u09B0 \u099B\u09BE\u09AF\u09BC\u09BE\u09AF\u09BC \u09B2\u09C1\u0995\u09BF\u09AF\u09BC\u09C7 \u09A5\u09BE\u0995\u09BE \u098F\u0995\u099F\u09BF \u09A8\u09BF\u09AD\u09C3\u09A4 \u0995\u09CB\u09A3\u0964 \u09AA\u09BE\u0996\u09BF\u09B0 \u0997\u09BE\u09A8 \u099B\u09BE\u09A1\u09BC\u09BE \u0986\u09B0 \u0995\u09CB\u09A8\u09CB \u0986\u0993\u09AF\u09BC\u09BE\u099C \u09A8\u09C7\u0987 \u2014 \u09B6\u0995\u09CD\u09A4\u09BF \u099A\u099F\u09CD\u099F\u09CB\u09AA\u09BE\u09A7\u09CD\u09AF\u09BE\u09AF\u09BC\u09C7\u09B0 \u09B8\u09C7\u0987 \u09B2\u09BE\u0987\u09A8\u09C7\u09B0 \u09AE\u09A4\u09CB: \u201C\u0985\u09AC\u09A8\u09C0, \u09AC\u09BE\u09A1\u09BC\u09BF \u0986\u099B\u09CB?\u201D',
+          features: ['\u09AA\u09BE\u0987\u09A8 \u09AC\u09A8\u09C7\u09B0 \u09A6\u09C3\u09B6\u09CD\u09AF', '\u0986\u09B2\u09BE\u09A6\u09BE \u09AA\u09CD\u09B0\u09AC\u09C7\u09B6\u09AA\u09A5', '\u09B8\u09BE\u09B0\u09BE\u0995\u09CD\u09B7\u09A3 \u0997\u09B0\u09AE \u099C\u09B2', '\u09AA\u09BE\u0996\u09BF \u09A6\u09C7\u0996\u09BE\u09B0 \u09AC\u09BE\u09B0\u09BE\u09A8\u09CD\u09A6\u09BE'],
         },
       ],
       amenities: [
-        'জৈব হোম-কুকড খাবার',
-        '৩,৮০০ ফুট মেঘরেখার দৃশ্য',
-        'প্রতি রাতে কাঠের আগুন',
-        'উচ্চগতির ফাইবার ইন্টারনেট',
-        'ব্যক্তিগত বিমানবন্দর পিকআপ',
-        'তাজা স্থানীয় চা পরিষেবা',
+        '\u099C\u09C8\u09AC \u0996\u09BE\u09AE\u09BE\u09B0\u09C7\u09B0 \u0998\u09B0\u09C7\u09B0 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE',
+        '\u09E9,\u09EE\u09E6\u09E6 \u09AB\u09C1\u099F \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09BF \u09A6\u09BF\u0997\u09A8\u09CD\u09A4',
+        '\u09AA\u09CD\u09B0\u09A4\u09BF \u09B0\u09BE\u09A4\u09C7 \u0995\u09BE\u09A0\u09C7\u09B0 \u0986\u0997\u09C1\u09A8',
+        '\u09A6\u09CD\u09B0\u09C1\u09A4\u0997\u09A4\u09BF\u09B0 \u09AB\u09BE\u0987\u09AC\u09BE\u09B0 \u0987\u09A8\u09CD\u099F\u09BE\u09B0\u09A8\u09C7\u099F',
+        '\u09AC\u09BF\u09AE\u09BE\u09A8\u09AC\u09A8\u09CD\u09A6\u09B0 \u09A5\u09C7\u0995\u09C7 \u09A8\u09BF\u099C\u09B8\u09CD\u09AC \u09AF\u09BE\u09A4\u09CD\u09B0\u09BE',
+        '\u09A4\u09BE\u099C\u09BE \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09BF \u099A\u09BE \u09AA\u09B0\u09BF\u09B7\u09C7\u09AC\u09BE',
       ],
     },
 
-    /* ─── EXPERIENCES PAGE ───────────────────────────────── */
+    /* EXPERIENCES PAGE */
     expPage: {
-      eyebrow: 'ধীর হিমালয়ের জীবন',
-      h1: 'কুয়াশা ও আলোয় লেখা মুহূর্তসমূহ',
-      sub: 'মেঘরেখার উপরে সূর্যোদয়ের চা থেকে শুরু করে তারার আলোয় কাঠের আগুন — লোয়ার বর্মায়েকের জীবনের ছন্দে পা দিন।',
+      eyebrow: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u099B\u09A8\u09CD\u09A6\u09C7, \u09AA\u09CD\u09B0\u0995\u09C3\u09A4\u09BF\u09B0 \u09B8\u09C1\u09B0\u09C7',
+      h1: '\u0995\u09C1\u09AF\u09BC\u09BE\u09B6\u09BE \u0986\u09B0 \u0986\u09B2\u09CB\u09B0 \u09AE\u09BE\u099D\u09C7 \u09B2\u09C7\u0996\u09BE \u0995\u09BF\u099B\u09C1 \u0997\u09B2\u09CD\u09AA',
+      sub: '\u098F\u0996\u09BE\u09A8\u09C7 \u09AA\u09CD\u09B0\u09A4\u09BF\u099F\u09BF \u09AE\u09C1\u09B9\u09C2\u09B0\u09CD\u09A4\u09C7\u09B0 \u09A8\u09BF\u099C\u09B8\u09CD\u09AC \u0995\u09AC\u09BF\u09A4\u09BE \u0986\u099B\u09C7 \u2014 \u09AD\u09CB\u09B0\u09C7\u09B0 \u099A\u09BE \u09A5\u09C7\u0995\u09C7 \u09A4\u09BE\u09B0\u09BE\u09B0 \u09B0\u09BE\u09A4, \u099A\u09BE-\u09AC\u09BE\u0997\u09BE\u09A8 \u09A5\u09C7\u0995\u09C7 \u09B2\u09C1\u0995\u09BE\u09A8\u09CB \u099D\u09B0\u09A8\u09BE\u0964',
     },
     featuredExp: {
-      eyebrow: 'পাহাড়ের নিমজ্জিত জীবন',
-      h2line1: 'এখানে আপনি',
-      h2line2: 'কী অনুভব করবেন?',
-      sub: 'লোয়ার বর্মায়েকের প্রতিটি মুহূর্তে আছে নিজস্ব শান্ত, তাড়াহীন যাদু।',
-      actsLabel: 'লাখে লাচেনের বিশেষ কার্যক্রম',
-      cta: 'আপনার হিমালয় যাত্রা পরিকল্পনা করুন →',
+      eyebrow: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u099C\u09C0\u09AC\u09A8\u09C7 \u09A8\u09BF\u099C\u09C7\u0995\u09C7 \u09AE\u09C7\u09B2\u09C7 \u09A6\u09BF\u09A8',
+      h2line1: '\u098F\u0996\u09BE\u09A8\u09C7 \u098F\u09B8\u09C7',
+      h2line2: '\u0995\u09C0 \u09AA\u09BE\u09AC\u09C7\u09A8?',
+      sub: '\u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995\u09C7\u09B0 \u09AA\u09CD\u09B0\u09A4\u09BF\u099F\u09BF \u09AA\u09CD\u09B0\u09B9\u09B0\u09C7 \u0986\u099B\u09C7 \u09A4\u09BE\u09B0 \u09A8\u09BF\u099C\u09B8\u09CD\u09AC \u09A8\u09BF\u09B8\u09CD\u09A4\u09AC\u09CD\u09A7 \u09AF\u09BE\u09A6\u09C1\u0964',
+      actsLabel: '\u09B2\u09BE\u0996\u09C7 \u09B2\u09BE\u099C\u09C7\u09A8\u09C7 \u09AF\u09BE \u0995\u09B0\u09BE \u09AF\u09BE\u09AF\u09BC',
+      cta: '\u0986\u09AA\u09A8\u09BE\u09B0 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09AF\u09BE\u09A4\u09CD\u09B0\u09BE \u09B8\u09BE\u099C\u09BE\u09A8 \u2192',
       moments: [
         {
-          num: '০১', tag: 'প্রতিটি ভোরে',
-          title: 'মেঘের উপর সূর্যোদয়',
-          desc: 'উপত্যকা জাগার আগেই জেগে উঠুন। বারান্দায় বসে গরম পাহাড়ি চায়ের কাপ হাতে কাঞ্চনজঙ্ঘায় সোনালি আলো ছড়িয়ে পড়া দেখুন।',
+          num: '\u09E6\u09E7', tag: '\u09AA\u09CD\u09B0\u09A4\u09BF\u099F\u09BF \u09AD\u09CB\u09B0\u09AC\u09C7\u09B2\u09BE',
+          title: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7 \u09AD\u09CB\u09B0 \u09B9\u09AF\u09BC \u09A7\u09C0\u09B0\u09C7 \u09A7\u09C0\u09B0\u09C7',
+          desc: '\u0989\u09AA\u09A4\u09CD\u09AF\u0995\u09BE \u0998\u09C1\u09AE\u09BF\u09AF\u09BC\u09C7 \u09A5\u09BE\u0995\u09A4\u09C7 \u09A5\u09BE\u0995\u09A4\u09C7\u0987 \u09AC\u09BE\u09B0\u09BE\u09A8\u09CD\u09A6\u09BE\u09AF\u09BC \u09AC\u09B8\u09C1\u09A8\u0964 \u09B9\u09BE\u09A4\u09C7 \u0997\u09B0\u09AE \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09BF \u099A\u09BE, \u099A\u09CB\u0996\u09C7 \u0995\u09BE\u099E\u09CD\u099C\u09A8\u099C\u0999\u09CD\u0998\u09BE\u09B0 \u09AA\u09CD\u09B0\u09A5\u09AE \u0986\u09B2\u09CB \u2014 \u098F\u0987 \u09AE\u09C1\u09B9\u09C2\u09B0\u09CD\u09A4\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF\u0987 \u0986\u09B8\u09BE\u0964',
         },
         {
-          num: '০২', tag: 'প্রতিটি রাতে',
-          title: 'তারায় ভরা আগুনের সন্ধ্যা',
-          desc: 'পাইন পাহাড়ে রাতের কুয়াশা নামলে কাঠের আগুনের চারপাশে বসুন — মাথার উপর শহরের আলো ছাড়া অসংখ্য তারার সমুদ্র।',
+          num: '\u09E6\u09E8', tag: '\u09AA\u09CD\u09B0\u09A4\u09BF\u099F\u09BF \u09B0\u09BE\u09A4\u09C7',
+          title: '\u0986\u0997\u09C1\u09A8\u09C7\u09B0 \u09AA\u09BE\u09B6\u09C7, \u09A4\u09BE\u09B0\u09BE\u09B0 \u09A8\u09BF\u099A\u09C7',
+          desc: '\u09AA\u09BE\u0987\u09A8 \u09B0\u09BF\u099C\u09C7 \u09B0\u09BE\u09A4\u09C7\u09B0 \u0995\u09C1\u09AF\u09BC\u09BE\u09B6\u09BE \u09AF\u0996\u09A8 \u0998\u09A8 \u09B9\u09AF\u09BC, \u09A4\u0996\u09A8 \u0995\u09BE\u09A0\u09C7\u09B0 \u0986\u0997\u09C1\u09A8\u09C7\u09B0 \u09AA\u09BE\u09B6\u09C7 \u09AC\u09B8\u09C1\u09A8\u0964 \u09AE\u09BE\u09A5\u09BE\u09B0 \u0989\u09AA\u09B0\u09C7 \u09B6\u09B9\u09B0\u09C7\u09B0 \u0995\u09CB\u09B2\u09BE\u09B9\u09B2 \u09A8\u09C7\u0987 \u2014 \u09B6\u09C1\u09A7\u09C1 \u09A4\u09BE\u09B0\u09BE\u09B0 \u09B8\u09AE\u09C1\u09A6\u09CD\u09B0\u0964',
         },
         {
-          num: '০৩', tag: 'বাড়ি থেকে ২ কিমি',
-          title: 'কুয়াশায় ঢাকা চা-বাগানের পথ',
-          desc: 'মুনসং-এর চা-বাগানের ধাপে হাঁটুন। তাজা পাতা তুলুন, বৃষ্টি-ধোয়া বাতাসে শ্বাস নিন, পাহাড়ি হাওয়ার ফিসফিস শুনুন।',
+          num: '\u09E6\u09E9', tag: '\u09AC\u09BE\u09A1\u09BC\u09BF\u09B0 \u0995\u09BE\u099B\u09C7\u0987',
+          title: '\u099A\u09BE-\u09AC\u09BE\u0997\u09BE\u09A8\u09C7\u09B0 \u09B6\u09BF\u09B6\u09BF\u09B0-\u09AD\u09C7\u099C\u09BE \u09AA\u09A5',
+          desc: '\u09AE\u09C1\u09A8\u09B8\u0982-\u098F\u09B0 \u09B8\u09AC\u09C1\u099C \u09A2\u09BE\u09B2\u09C7 \u09B9\u09BE\u0981\u099F\u09C1\u09A8\u0964 \u09A4\u09BE\u099C\u09BE \u09AA\u09BE\u09A4\u09BE \u099B\u09CB\u0981\u09AF\u09BC\u09BE \u09B9\u09BE\u09A4, \u09AC\u09C3\u09B7\u09CD\u099F\u09BF\u09A7\u09CB\u09AF\u09BC\u09BE \u09AC\u09BE\u09A4\u09BE\u09B8\u09C7 \u09AC\u09C1\u0995 \u09AD\u09B0\u09BE \u09A8\u09BF\u0983\u09B6\u09CD\u09AC\u09BE\u09B8 \u2014 \u098F\u099F\u09BE\u0987 \u09B8\u09A4\u09CD\u09AF\u09BF\u0995\u09BE\u09B0\u09C7\u09B0 \u09AC\u09BF\u09B6\u09CD\u09B0\u09BE\u09AE\u0964',
         },
         {
-          num: '০৪', tag: 'পথের বাইরে',
-          title: 'গোপন পাহাড়ি ঝরনা',
-          desc: 'গ্রামের বয়স্কদের চেনা গোপন বনপথ ধরে যান — শান্ত ঝরনার কাছে, যেখানে পাহাড়ের ঠান্ডা স্বচ্ছ জল বয়ে চলে।',
+          num: '\u09E6\u09EA', tag: '\u09B2\u09C1\u0995\u09BE\u09A8\u09CB \u09AA\u09A5\u09C7\u09B0 \u09B6\u09C7\u09B7\u09C7',
+          title: '\u09AF\u09C7 \u099D\u09B0\u09A8\u09BE\u09B0 \u0995\u09A5\u09BE \u09AE\u09BE\u09A8\u099A\u09BF\u09A4\u09CD\u09B0\u09C7 \u09A8\u09C7\u0987',
+          desc: '\u0997\u09CD\u09B0\u09BE\u09AE\u09C7\u09B0 \u09AA\u09CD\u09B0\u09AC\u09C0\u09A3\u09A6\u09C7\u09B0 \u099C\u09BE\u09A8\u09BE \u09B8\u09C7\u0987 \u09AC\u09A8\u09AA\u09A5 \u09A7\u09B0\u09C7 \u09AF\u09BE\u09A8 \u2014 \u09A8\u09BF\u09B0\u09CD\u099C\u09A8 \u0997\u09BF\u09B0\u09BF\u0996\u09BE\u09A6\u09C7 \u09B8\u09C7\u0987 \u099D\u09B0\u09A8\u09BE \u0986\u099C\u0993 \u0985\u09AA\u09B0\u09BF\u099A\u09BF\u09A4 \u09AA\u09A5\u09BF\u0995\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF \u0985\u09AA\u09C7\u0995\u09CD\u09B7\u09BE\u09AF\u09BC \u0986\u099B\u09C7\u0964',
         },
       ],
       acts: [
-        { title: 'পাইন বনে ট্রেকিং', detail: '১.৫ ঘন্টা · স্থানীয় পথ' },
-        { title: 'তিস্তা নদীর দৃশ্য', detail: '২০ মিনিটের সুন্দর ড্রাইভ' },
-        { title: 'বৌদ্ধ মনাস্ট্রি ভ্রমণ', detail: '৩০ মিনিটের ড্রাইভ' },
-        { title: 'জৈব খামারে ফসল তোলা', detail: 'হোমস্টের বাগানে' },
-        { title: 'রাতে তারা দেখা', detail: 'পরিষ্কার আকাশের রাতে' },
-        { title: 'উনুনে রান্না', detail: 'প্রতিদিনের ঘরের খাবার' },
+        { title: '\u09AA\u09BE\u0987\u09A8 \u09AC\u09A8\u09C7 \u09B9\u09BE\u0981\u099F\u09BE', detail: '\u09E7.\u09EB \u0998\u09A3\u09CD\u099F\u09BE \u00B7 \u09B8\u09CD\u09A5\u09BE\u09A8\u09C0\u09AF\u09BC \u09AA\u09A5' },
+        { title: '\u09A4\u09BF\u09B8\u09CD\u09A4\u09BE\u09B0 \u09A6\u09C3\u09B6\u09CD\u09AF', detail: '\u09E8\u09E6 \u09AE\u09BF\u09A8\u09BF\u099F\u09C7\u09B0 \u09AA\u09A5' },
+        { title: '\u09AE\u09A8\u09BE\u09B8\u09CD\u099F\u09CD\u09B0\u09BF \u09A6\u09B0\u09CD\u09B6\u09A8', detail: '\u09E9\u09E6 \u09AE\u09BF\u09A8\u09BF\u099F\u09C7\u09B0 \u09A6\u09C2\u09B0\u09A4\u09CD\u09AC\u09C7' },
+        { title: '\u099C\u09C8\u09AC \u09AC\u09BE\u0997\u09BE\u09A8\u09C7 \u0995\u09BE\u099C', detail: '\u09B9\u09CB\u09AE\u09B8\u09CD\u099F\u09C7\u09B0 \u09A8\u09BF\u099C\u09C7\u09B0 \u09AC\u09BE\u0997\u09BE\u09A8\u09C7' },
+        { title: '\u09B0\u09BE\u09A4\u09C7 \u09A4\u09BE\u09B0\u09BE \u09A6\u09C7\u0996\u09BE', detail: '\u09AA\u09B0\u09BF\u09B7\u09CD\u0995\u09BE\u09B0 \u0986\u0995\u09BE\u09B6\u09C7\u09B0 \u09B0\u09BE\u09A4\u09C7' },
+        { title: '\u0989\u09A8\u09C1\u09A8\u09C7 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE\u09B0 \u0985\u09AD\u09BF\u099C\u09CD\u099E\u09A4\u09BE', detail: '\u09B0\u09CB\u099C\u0995\u09BE\u09B0 \u0998\u09B0\u09C7\u09B0 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE' },
       ],
     },
 
-    /* ─── STORY PAGE ─────────────────────────────────────── */
+    /* STORY PAGE */
     storyPage: {
-      eyebrow: 'লোয়ার বর্মায়েক · মুনসং · ৩,৮০০ ফুট',
-      h1: 'আমাদের পারিবারিক গল্প ও ঐতিহ্য',
-      sub: 'প্রজন্মের পর প্রজন্ম ধরে আমাদের পরিবার এই শান্ত পাহাড়ের রক্ষক। আমাদের ঐতিহ্য, খামার-থেকে-রান্নাঘরের খাবার, আর উন্মুক্ত আতিথেয়তার গল্প জানুন।',
+      eyebrow: '\u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995 \u00B7 \u09AE\u09C1\u09A8\u09B8\u0982 \u00B7 \u09E9,\u09EE\u09E6\u09E6 \u09AB\u09C1\u099F',
+      h1: '\u098F\u0995\u099F\u09BF \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0, \u098F\u0995\u099F\u09BF \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC, \u098F\u0995\u099F\u09BF \u0997\u09B2\u09CD\u09AA',
+      sub: '\u09AA\u09CD\u09B0\u099C\u09A8\u09CD\u09AE\u09C7\u09B0 \u09AA\u09B0 \u09AA\u09CD\u09B0\u099C\u09A8\u09CD\u09AE \u098F\u0987 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u0995\u09C7 \u0998\u09B0 \u09AC\u09B2\u09C7 \u099C\u09C7\u09A8\u09C7\u099B\u09BF\u0964 \u09B8\u09C7\u0987 \u09B6\u09BF\u0995\u09A1\u09BC\u09C7\u09B0 \u0997\u09B2\u09CD\u09AA, \u0989\u09A8\u09C1\u09A8\u09C7\u09B0 \u0997\u09B2\u09CD\u09AA, \u09A6\u09B0\u099C\u09BE \u0996\u09CB\u09B2\u09BE \u09B0\u09BE\u0996\u09BE\u09B0 \u0997\u09B2\u09CD\u09AA\u0964',
     },
     introduction: {
-      eyebrow: 'লাখে পরিবারের ঐতিহ্য',
-      h2line1: 'শুধু থাকা নয়।',
-      h2line2: 'একটি হিমালয়ান ঘর।',
-      lead: 'প্রজন্মের পর প্রজন্ম ধরে আমাদের পরিবার এই কুয়াশামোড়া পাহাড়কে নিজের ঘর বলে আসছে। ব্লু আইস আমরা গড়েছি কোনো বাণিজ্যিক হোটেল হিসেবে নয় — বরং খাঁটি সিকিমি উষ্ণতার খোঁজে আসা পথিকদের জন্য এক উন্মুক্ত হৃদয়ের আশ্রয় হিসেবে।',
-      body: 'এখানে আমাদের নিজের জৈব ছাদ-বাগান থেকে তুলে আনা সবজি দিয়ে রান্না হয়। কাঠের আগুনে চায়ের সাথে গল্প জমে। আর এখানকার আতিথেয়রা আপনার নাম, আপনার পছন্দ এবং আপনার গল্প মনে রাখেন।',
-      stat1: '১০০%', stat1Label: 'জৈব খামারের রান্নাঘর',
-      stat2: '৪.৯★', stat2Label: 'অতিথি আতিথেয়তার রেটিং',
-      stat3: '০', stat3Label: 'শহরের কোলাহল ও যানজট',
-      cta: 'আপনার যাত্রা পরিকল্পনা করুন →',
-      badgeAlt: '৩,৮০০', badgeUnit: 'ফুট',
-      badgeLabel: 'লোয়ার বর্মায়েক · মুনসং',
+      eyebrow: '\u09B2\u09BE\u0996\u09C7 \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0\u09C7\u09B0 \u09B6\u09BF\u0995\u09A1\u09BC',
+      h2line1: '\u098F\u0995\u099F\u09BF \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0\u09C7\u09B0 \u0997\u09B2\u09CD\u09AA\u0964',
+      h2line2: '\u098F\u0995\u099F\u09BF \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u09B8\u09CD\u09AC\u09AA\u09CD\u09A8\u0964',
+      lead: '\u099C\u09C0\u09AC\u09A8\u09BE\u09A8\u09A8\u09CD\u09A6 \u09A6\u09BE\u09B6 \u09B2\u09BF\u0996\u09C7\u099B\u09BF\u09B2\u09C7\u09A8 \u2014 \u201C\u0986\u09AC\u09BE\u09B0 \u0986\u09B8\u09BF\u09AC \u09AB\u09BF\u09B0\u09C7 \u09A7\u09BE\u09A8\u09B8\u09BF\u09A1\u09BC\u09BF\u09AC\u09BE\u09B0 \u09A4\u09C0\u09B0\u09C7\u0964\u201D \u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09AA\u09C2\u09B0\u09CD\u09AC\u09AA\u09C1\u09B0\u09C1\u09B7\u09C7\u09B0\u09BE\u0993 \u098F\u0987 \u09B9\u09BF\u09AE\u09BE\u09B2\u09AF\u09BC\u09C7\u09B0 \u09A1\u09BE\u0995\u09C7 \u09AC\u09BE\u09B0\u09AC\u09BE\u09B0 \u09AB\u09BF\u09B0\u09C7 \u098F\u09B8\u09C7\u099B\u09C7\u09A8\u0964 \u09B8\u09C7\u0987 \u09AB\u09C7\u09B0\u09BE\u09B0 \u0997\u09B2\u09CD\u09AA \u09A5\u09C7\u0995\u09C7\u0987 \u09AC\u09CD\u09B2\u09C1 \u0986\u0987\u09B8-\u098F\u09B0 \u099C\u09A8\u09CD\u09AE \u2014 \u0995\u09CB\u09A8\u09CB \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u099A\u09BF\u09A8\u09CD\u09A4\u09BE \u09A5\u09C7\u0995\u09C7 \u09A8\u09AF\u09BC, \u0998\u09B0\u09C7\u09B0 \u0986\u09B2\u09CB \u09A8\u09BF\u09AD\u09A4\u09C7 \u09A8\u09BE \u09A6\u09C7\u0993\u09AF\u09BC\u09BE\u09B0 \u09AA\u09CD\u09B0\u09A4\u09BF\u099C\u09CD\u099E\u09BE \u09A5\u09C7\u0995\u09C7\u0964',
+      body: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09A8\u09BF\u099C\u09C7\u09B0 \u09AC\u09BE\u0997\u09BE\u09A8\u09C7 \u09AB\u09B2\u09BE \u09B8\u09AC\u099C\u09BF\u09A4\u09C7 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE \u09B9\u09AF\u09BC\u0964 \u099A\u09BE\u09AF\u09BC\u09C7\u09B0 \u0995\u09BE\u09AA\u09C7\u09B0 \u09AA\u09BE\u09B6\u09C7 \u0997\u09B2\u09CD\u09AA \u099C\u09AE\u09C7\u0964 \u098F\u0996\u09BE\u09A8\u09C7 \u09AF\u09BF\u09A8\u09BF \u0986\u09B8\u09C7\u09A8, \u09A4\u09BF\u09A8\u09BF \u0985\u09A4\u09BF\u09A5\u09BF \u09A8\u09A8 \u2014 \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0\u09C7\u09B0 \u098F\u0995\u099C\u09A8 \u09B9\u09AF\u09BC\u09C7 \u09AF\u09BE\u09A8\u0964 \u0986\u09AE\u09B0\u09BE \u0986\u09AA\u09A8\u09BE\u09B0 \u09A8\u09BE\u09AE \u09AE\u09A8\u09C7 \u09B0\u09BE\u0996\u09BF, \u0986\u09AA\u09A8\u09BE\u09B0 \u09AA\u099B\u09A8\u09CD\u09A6 \u09AE\u09A8\u09C7 \u09B0\u09BE\u0996\u09BF\u0964',
+      stat1: '\u09E7\u09E6\u09E6%', stat1Label: '\u099C\u09C8\u09AC \u0996\u09BE\u09AE\u09BE\u09B0\u09C7\u09B0 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE',
+      stat2: '\u09EA.\u09EF\u2605', stat2Label: '\u0985\u09A4\u09BF\u09A5\u09BF\u09B0 \u09AE\u09C2\u09B2\u09CD\u09AF\u09BE\u09AF\u09BC\u09A8',
+      stat3: '\u09E6', stat3Label: '\u09B6\u09B9\u09C1\u09B0\u09C7 \u0995\u09CB\u09B2\u09BE\u09B9\u09B2',
+      cta: '\u0986\u09AA\u09A8\u09BE\u09B0 \u09AF\u09BE\u09A4\u09CD\u09B0\u09BE \u09B8\u09BE\u099C\u09BE\u09A8 \u2192',
+      badgeAlt: '\u09E9,\u09EE\u09E6\u09E6', badgeUnit: '\u09AB\u09C1\u099F',
+      badgeLabel: '\u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995 \u00B7 \u09AE\u09C1\u09A8\u09B8\u0982',
     },
     gallery: {
-      eyebrow: 'বিশেষ গ্যালারি',
-      h2line1: 'নিস্তব্ধতায়',
-      h2line2: 'ধরা মুহূর্তসমূহ',
-      sub: 'লাখে লাচেনের এক দৃশ্যময় যাত্রা।',
-      cta: 'আপনার যাত্রা পরিকল্পনা করুন →',
+      eyebrow: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09AE\u09C1\u09B9\u09C2\u09B0\u09CD\u09A4\u09C7\u09B0 \u09B8\u0982\u0997\u09CD\u09B0\u09B9',
+      h2line1: '\u099B\u09AC\u09BF\u09A4\u09C7 \u09A7\u09B0\u09BE',
+      h2line2: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC',
+      sub: '\u0995\u09BF\u099B\u09C1 \u09AE\u09C1\u09B9\u09C2\u09B0\u09CD\u09A4 \u0995\u09A5\u09BE\u09AF\u09BC \u09AC\u09B2\u09BE \u09AF\u09BE\u09AF\u09BC \u09A8\u09BE \u2014 \u09B6\u09C1\u09A7\u09C1 \u09A6\u09C7\u0996\u09BE \u09AF\u09BE\u09AF\u09BC\u0964',
+      cta: '\u0986\u09AA\u09A8\u09BE\u09B0 \u09AF\u09BE\u09A4\u09CD\u09B0\u09BE \u09B8\u09BE\u099C\u09BE\u09A8 \u2192',
       photos: [
-        { caption: 'ঘড়ির অ্যালার্ম নয় — শুধু পাহাড়ের আলো।' },
-        { caption: 'যেখানে সকালের কুয়াশা পাহাড়কে আলিঙ্গন করে।' },
-        { caption: 'কাঠের আগুনের উষ্ণতায় বেড়ে যাওয়া সন্ধ্যা।' },
-        { caption: 'যেখানে পাহাড় শ্বাস ফেলে।' },
-        { caption: 'নীরব চিন্তার পথ।' },
-        { caption: 'কাঠের আগুনে রান্না, ভালোবাসায় পরিবেশন।' },
+        { caption: '\u0998\u09C1\u09AE \u09AD\u09BE\u0999\u09C7 \u09AA\u09BE\u0996\u09BF\u09B0 \u09A1\u09BE\u0995\u09C7, \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u0986\u09B2\u09CB\u09AF\u09BC\u0964' },
+        { caption: '\u0995\u09C1\u09AF\u09BC\u09BE\u09B6\u09BE \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u0995\u09C7 \u0986\u09B2\u09BF\u0999\u09CD\u0997\u09A8 \u0995\u09B0\u09C7 \u2014 \u09B0\u09CB\u099C \u09B8\u0995\u09BE\u09B2\u09C7\u0964' },
+        { caption: '\u0986\u0997\u09C1\u09A8\u09C7\u09B0 \u0989\u09B7\u09CD\u09A3\u09A4\u09BE\u09AF\u09BC \u09B8\u09A8\u09CD\u09A7\u09CD\u09AF\u09BE \u09AC\u09BE\u09A1\u09BC\u09C7\u0964' },
+        { caption: '\u098F\u0996\u09BE\u09A8\u09C7 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u0993 \u09B6\u09CD\u09AC\u09BE\u09B8 \u09A8\u09C7\u09AF\u09BC\u0964' },
+        { caption: '\u09AA\u09A5 \u09B9\u09BE\u0981\u099F\u09B2\u09C7, \u09AE\u09A8 \u09B9\u09BE\u09B2\u0995\u09BE \u09B9\u09AF\u09BC\u0964' },
+        { caption: '\u0989\u09A8\u09C1\u09A8\u09C7\u09B0 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE\u09AF\u09BC \u09AE\u09BF\u09B6\u09C7 \u09A5\u09BE\u0995\u09C7 \u09AD\u09BE\u09B2\u09CB\u09AC\u09BE\u09B8\u09BE\u0964' },
       ],
     },
     whyBlueIce: {
-      eyebrow: 'কেন অতিথিরা ফিরে আসেন',
-      h2line1: 'আমাদের পাহাড়ি',
-      h2line2: 'আশ্রয়ের তিনটি',
-      h2line3: 'মূল স্তম্ভ',
-      stat1: '১০০%', stat1Label: 'জৈব খামারের রান্নাঘর',
-      stat2: '৩,৮০০ ফুট', stat2Label: 'মেঘরেখার উচ্চতা',
-      stat3: '৪.৯', stat3Label: 'অতিথি আতিথেয়তার রেটিং',
-      stat4: '∞', stat4Label: 'অবিরাম প্রশান্তি',
+      eyebrow: '\u0985\u09A4\u09BF\u09A5\u09BF\u09B0\u09BE \u09AC\u09BE\u09B0\u09AC\u09BE\u09B0 \u09AB\u09C7\u09B0\u09C7\u09A8 \u0995\u09C7\u09A8',
+      h2line1: '\u09A4\u09BF\u09A8\u099F\u09BF \u0995\u09BE\u09B0\u09A3 \u09AF\u09BE',
+      h2line2: '\u098F\u0987 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u0995\u09C7',
+      h2line3: '\u0986\u09B2\u09BE\u09A6\u09BE \u0995\u09B0\u09C7 \u09B0\u09BE\u0996\u09C7',
+      stat1: '\u09E7\u09E6\u09E6%', stat1Label: '\u099C\u09C8\u09AC \u0996\u09BE\u09AE\u09BE\u09B0\u09C7\u09B0 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE',
+      stat2: '\u09E9,\u09EE\u09E6\u09E6 \u09AB\u09C1\u099F', stat2Label: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09BF \u0989\u099A\u09CD\u099A\u09A4\u09BE',
+      stat3: '\u09EA.\u09EF', stat3Label: '\u0985\u09A4\u09BF\u09A5\u09BF\u09B0 \u09AE\u09C2\u09B2\u09CD\u09AF\u09BE\u09AF\u09BC\u09A8',
+      stat4: '\u221E', stat4Label: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7\u09B0 \u09A8\u09BF\u09B8\u09CD\u09A4\u09AC\u09CD\u09A7\u09A4\u09BE',
       pillars: [
         {
-          title: 'পরিবারের মতো থাকুন',
-          desc: 'কোনো বাণিজ্যিক হোটেল নয়। একটি সত্যিকারের ঘর — খামারের উনুনে রান্না, আতিথেয়রা আপনার নাম মনে রাখেন, কোনো রিসোর্ট যা দিতে পারে না।',
+          title: '\u098F \u0998\u09B0\u09C7 \u098F\u09B2\u09C7 \u0986\u09B0 \u0985\u09A4\u09BF\u09A5\u09BF \u09A5\u09BE\u0995\u09C7\u09A8 \u09A8\u09BE',
+          desc: '\u0995\u09CB\u09A8\u09CB \u09B0\u09BF\u09B8\u09C7\u09AA\u09B6\u09A8 \u09A8\u09C7\u0987, \u0995\u09CB\u09A8\u09CB \u09B0\u09C1\u09AE \u09B8\u09BE\u09B0\u09CD\u09AD\u09BF\u09B8 \u09A8\u09C7\u0987 \u2014 \u0986\u099B\u09C7 \u0989\u09A8\u09C1\u09A8\u09C7\u09B0 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE, \u0986\u099B\u09C7 \u09AA\u09B0\u09BF\u099A\u09BF\u09A4 \u09AE\u09C1\u0996\u09C7\u09B0 \u09B9\u09BE\u09B8\u09BF\u0964 \u0986\u09AE\u09B0\u09BE \u0986\u09AA\u09A8\u09BE\u09B0 \u09A8\u09BE\u09AE \u09AE\u09A8\u09C7 \u09B0\u09BE\u0996\u09BF\u0964',
         },
         {
-          title: 'মেঘের উপরে জেগে উঠুন',
-          desc: '৩,৮০০ ফুটে লোয়ার বর্মায়েক উপত্যকার কুয়াশার উপরে। আপনার সকালের দৃশ্য কাঞ্চনজঙ্ঘার অবাধ দিগন্ত।',
+          title: '\u09AF\u09C7\u0996\u09BE\u09A8\u09C7 \u09AD\u09CB\u09B0\u099F\u09BE \u0985\u09A8\u09CD\u09AF\u09B0\u0995\u09AE \u09B9\u09AF\u09BC',
+          desc: '\u09E9,\u09EE\u09E6\u09E6 \u09AB\u09C1\u099F\u09C7 \u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995 \u09AE\u09C7\u0998\u09C7\u09B0 \u0989\u09AA\u09B0\u09C7 \u09AC\u09BE\u09B8 \u0995\u09B0\u09C7\u0964 \u0986\u09AA\u09A8\u09BE\u09B0 \u09B8\u0995\u09BE\u09B2 \u09B6\u09C1\u09B0\u09C1 \u09B9\u09AF\u09BC \u0995\u09BE\u099E\u09CD\u099C\u09A8\u099C\u0999\u09CD\u0998\u09BE\u09B0 \u09B0\u0982 \u09AC\u09A6\u09B2\u09BE\u09A8\u09CB \u09A6\u09C7\u0996\u09A4\u09C7 \u09A6\u09C7\u0996\u09A4\u09C7\u0964',
         },
         {
-          title: 'লুকানো হিমালয়',
-          desc: 'মুনসং ভিড় পর্যটনের মানচিত্রে নেই। গোপন ঝরনা, চা-বাগানের পথ, আর পাহাড়ের নিস্তব্ধতা — আপনার বারান্দার ঠিক বাইরে।',
+          title: '\u09AA\u09B0\u09CD\u09AF\u099F\u09A8\u09C7\u09B0 \u09AD\u09BF\u09A1\u09BC \u09AF\u09C7\u0996\u09BE\u09A8\u09C7 \u09AA\u09CC\u0981\u099B\u09BE\u09AF\u09BC\u09A8\u09BF',
+          desc: '\u09AE\u09C1\u09A8\u09B8\u0982 \u098F\u0996\u09A8\u09CB \u09B8\u09C7\u0987 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC \u09AF\u09BE \u099C\u09C0\u09AC\u09A8\u09BE\u09A8\u09A8\u09CD\u09A6\u09C7\u09B0 \u0995\u09AC\u09BF\u09A4\u09BE\u09AF\u09BC \u099B\u09BF\u09B2 \u2014 \u09A8\u09BF\u09AC\u09BF\u09A1\u09BC, \u09A8\u09BF\u09AD\u09C3\u09A4, \u09A8\u09BF\u099C\u09C7\u09B0 \u09AE\u09A4\u09CB\u0964 \u0997\u09CB\u09AA\u09A8 \u099D\u09B0\u09A8\u09BE, \u099A\u09BE-\u09AC\u09BE\u0997\u09BE\u09A8, \u0986\u09B0 \u0985\u0996\u09A3\u09CD\u09A1 \u09A8\u09C0\u09B0\u09AC\u09A4\u09BE\u0964',
         },
       ],
     },
 
-    /* ─── CONTACT PAGE ───────────────────────────────────── */
+    /* CONTACT PAGE */
     contactPage: {
-      eyebrow: 'আপনার আগুনের পাশের জায়গা অপেক্ষা করছে',
-      h1: 'আপনার আশ্রয় নিশ্চিত করুন',
-      sub: 'একটি সত্যিকারের পারিবারিক ঘরের শান্তি ও উষ্ণতা রক্ষা করতে আমরা একসাথে অল্প কয়েকজন অতিথিকে স্থান দিই। আপনার তারিখ ঠিক করতে সরাসরি আমাদের সাথে যোগাযোগ করুন।',
-      card1badge: 'তাৎক্ষণিক হোস্ট চ্যাট',
-      card1h3: 'হোয়াটসঅ্যাপ বুকিং',
-      card1p: 'তাৎক্ষণিক রুম নিশ্চিতকরণ, ব্যক্তিগত খাবারের পছন্দ এবং পাহাড়ি ভ্রমণ পরামর্শের জন্য সরাসরি আমাদের হোস্টদের সাথে চ্যাট করুন।',
-      card1cta: 'হোয়াটসঅ্যাপে চ্যাট করুন →',
-      card2badge: 'সরাসরি লাইন',
-      card2h3: 'আমাদের সাথে কথা বলুন',
-      card2p: 'ভয়েস কল পছন্দ করেন? ভ্রমণের আগে যেকোনো প্রশ্নের জন্য সকাল ৮টা থেকে রাত ৮টা পর্যন্ত আমাদের কাছে পৌঁছান।',
-      card2cta: 'কল করুন +৯১ ৯৮০০০ ০০০০০',
-      card3badge: 'ইমেইল জিজ্ঞাসা',
-      card3h3: 'বিশেষ অনুরোধ',
-      card3p: 'পাহাড়ে দীর্ঘ কাজের থাকা, পারিবারিক মিলনমেলা বা কাস্টম রিট্রিট বুকিংয়ের জন্য আমাদের ইমেইল করুন।',
-      card3cta: 'ইমেইল পাঠান →',
-      locationH2: 'লোয়ার বর্মায়েক, মুনসং খুঁজে পাওয়া',
-      locationSub: 'কালিম্পং জেলার শান্ত সবুজ পাহাড়ে ৩,৮০০ ফুট উচ্চতায় বাসা।',
-      loc1h: 'বিমানে — বাগডোগরা বিমানবন্দর (IXB)',
-      loc1p: 'প্রায় ৮৫ কিমি / তিস্তা নদীর উপত্যকা দিয়ে ৩ ঘন্টার সুন্দর ড্রাইভ।',
-      loc2h: 'ট্রেনে — NJP স্টেশন',
-      loc2p: 'প্রায় ৮০ কিমি / সেবক ব্রিজ ও কালিম্পং রুট দিয়ে ২.৫–৩ ঘন্টার ড্রাইভ।',
-      loc3h: 'ব্যক্তিগত হোমস্টে ট্রান্সফার',
-      loc3p: 'NJP বা বাগডোগরা থেকে সরাসরি আমাদের দরজায় আসার জন্য আমরা প্রাক-বুক করা প্রাইভেট ক্যাবের ব্যবস্থা করি।',
+      eyebrow: '\u0986\u0997\u09C1\u09A8\u09C7\u09B0 \u09AA\u09BE\u09B6\u09C7 \u0986\u09AA\u09A8\u09BE\u09B0 \u099C\u09BE\u09AF\u09BC\u0997\u09BE\u099F\u09BE \u0996\u09BE\u09B2\u09BF \u0986\u099B\u09C7',
+      h1: '\u0986\u09B8\u09C1\u09A8, \u0995\u09A5\u09BE \u09AC\u09B2\u09BF\u0964',
+      sub: '\u0986\u09AE\u09B0\u09BE \u098F\u0995\u09B8\u09BE\u09A5\u09C7 \u09AC\u09C7\u09B6\u09BF \u0985\u09A4\u09BF\u09A5\u09BF \u09B0\u09BE\u0996\u09BF \u09A8\u09BE \u2014 \u0995\u09BE\u09B0\u09A3 \u09AA\u09CD\u09B0\u09A4\u09CD\u09AF\u09C7\u0995\u09C7\u09B0 \u0986\u09B2\u09BE\u09A6\u09BE \u09AF\u09A4\u09CD\u09A8 \u09AA\u09CD\u09B0\u09BE\u09AA\u09CD\u09AF\u0964 \u0986\u09AA\u09A8\u09BE\u09B0 \u09AD\u09CD\u09B0\u09AE\u09A3\u09C7\u09B0 \u0995\u09A5\u09BE \u099C\u09BE\u09A8\u09BE\u09A8, \u0986\u09AE\u09B0\u09BE \u09AC\u09BE\u0995\u09BF\u099F\u09BE \u09B8\u09BE\u09AE\u09B2\u09C7 \u09A8\u09C7\u09AC\u0964',
+      card1badge: '\u09B8\u09B0\u09BE\u09B8\u09B0\u09BF \u0995\u09A5\u09BE \u09AC\u09B2\u09C1\u09A8',
+      card1h3: '\u09B9\u09CB\u09AF\u09BC\u09BE\u099F\u09B8\u0985\u09CD\u09AF\u09BE\u09AA\u09C7 \u09AF\u09CB\u0997\u09BE\u09AF\u09CB\u0997',
+      card1p: '\u0998\u09B0 \u09A8\u09BF\u09B6\u09CD\u099A\u09BF\u09A4 \u0995\u09B0\u09BE, \u0996\u09BE\u09AC\u09BE\u09B0\u09C7\u09B0 \u09AA\u099B\u09A8\u09CD\u09A6 \u099C\u09BE\u09A8\u09BE\u09A4\u09C7, \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09BF \u09AA\u09A5\u09C7\u09B0 \u09AA\u09B0\u09BE\u09AE\u09B0\u09CD\u09B6\u09C7 \u2014 \u09B8\u09AC \u0995\u09BF\u099B\u09C1 \u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09B8\u09BE\u09A5\u09C7 \u09B8\u09B0\u09BE\u09B8\u09B0\u09BF\u0964',
+      card1cta: '\u09B9\u09CB\u09AF\u09BC\u09BE\u099F\u09B8\u0985\u09CD\u09AF\u09BE\u09AA\u09C7 \u09B2\u09BF\u0996\u09C1\u09A8 \u2192',
+      card2badge: '\u09AB\u09CB\u09A8\u09C7 \u0995\u09A5\u09BE \u09AC\u09B2\u09C1\u09A8',
+      card2h3: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09A1\u09BE\u0995\u09C1\u09A8',
+      card2p: '\u0995\u09A5\u09BE\u09AF\u09BC \u09B8\u09CD\u09AC\u09BE\u099B\u09A8\u09CD\u09A6\u09CD\u09AF \u09AA\u09BE\u09A8? \u09B8\u0995\u09BE\u09B2 \u09AE\u09C1\u09B9 \u09A5\u09C7\u0995\u09C7 \u09B0\u09BE\u09A4 \u09AE\u09C1\u09B9-\u09B0 \u09AE\u09A7\u09CD\u09AF\u09C7 \u09AB\u09CB\u09A8 \u0995\u09B0\u09C1\u09A8 \u2014 \u0986\u09AE\u09B0\u09BE \u09B8\u09C7\u0996\u09BE\u09A8\u09C7\u0987 \u0986\u099B\u09BF\u0964',
+      card2cta: '\u09AB\u09CB\u09A8 \u0995\u09B0\u09C1\u09A8 +\u09EF\u09E7 \u09EF\u09EE\u09E6\u09E6\u09E6 \u09E6\u09E6\u09E6\u09E6\u09E6',
+      card3badge: '\u09AC\u09BF\u09B8\u09CD\u09A4\u09BE\u09B0\u09BF\u09A4 \u099C\u09BE\u09A8\u09BE\u09A8',
+      card3h3: '\u0987\u09AE\u09C7\u0987\u09B2 \u0995\u09B0\u09C1\u09A8',
+      card3p: '\u09A6\u09C0\u09B0\u09CD\u0998 \u09A5\u09BE\u0995\u09BE\u09B0 \u09AA\u09B0\u09BF\u0995\u09B2\u09CD\u09AA\u09A8\u09BE, \u09AA\u09BE\u09B0\u09BF\u09AC\u09BE\u09B0\u09BF\u0995 \u0986\u09A1\u09CD\u09A1\u09BE \u09AC\u09BE \u09AC\u09BF\u09B6\u09C7\u09B7 \u0985\u09A8\u09C1\u09B7\u09CD\u09A0\u09BE\u09A8\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF \u0987\u09AE\u09C7\u0987\u09B2\u09C7 \u09AC\u09BF\u09B8\u09CD\u09A4\u09BE\u09B0\u09BF\u09A4 \u099C\u09BE\u09A8\u09BE\u09A8\u0964',
+      card3cta: '\u0987\u09AE\u09C7\u0987\u09B2 \u09AA\u09BE\u09A0\u09BE\u09A8 \u2192',
+      locationH2: '\u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995, \u09AE\u09C1\u09A8\u09B8\u0982 \u2014 \u0995\u09C0\u09AD\u09BE\u09AC\u09C7 \u09AA\u09CC\u0981\u099B\u09BE\u09AC\u09C7\u09A8',
+      locationSub: '\u0995\u09BE\u09B2\u09BF\u09AE\u09CD\u09AA\u0982 \u099C\u09C7\u09B2\u09BE\u09B0 \u09B6\u09BE\u09A8\u09CD\u09A4 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09C7, \u09E9,\u09EE\u09E6\u09E6 \u09AB\u09C1\u099F \u0989\u099A\u09CD\u099A\u09A4\u09BE\u09AF\u09BC \u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09A6\u09B0\u099C\u09BE \u0996\u09CB\u09B2\u09BE\u0964',
+      loc1h: '\u09AC\u09BF\u09AE\u09BE\u09A8\u09C7 \u2014 \u09AC\u09BE\u0997\u09A1\u09CB\u0997\u09B0\u09BE \u09AC\u09BF\u09AE\u09BE\u09A8\u09AC\u09A8\u09CD\u09A6\u09B0',
+      loc1p: '\u09AA\u09CD\u09B0\u09BE\u09AF\u09BC \u09EE\u09EB \u0995\u09BF\u09AE\u09BF \u2014 \u09A4\u09BF\u09B8\u09CD\u09A4\u09BE\u09B0 \u0989\u09AA\u09A4\u09CD\u09AF\u0995\u09BE \u09A6\u09BF\u09AF\u09BC\u09C7 \u09E9 \u0998\u09A3\u09CD\u099F\u09BE\u09B0 \u09B8\u09C1\u09A8\u09CD\u09A6\u09B0 \u09AA\u09A5\u0964',
+      loc2h: '\u099F\u09CD\u09B0\u09C7\u09A8\u09C7 \u2014 \u09A8\u09BF\u0989 \u099C\u09B2\u09AA\u09BE\u0987\u0997\u09C1\u09A1\u09BC\u09BF \u09B8\u09CD\u099F\u09C7\u09B6\u09A8',
+      loc2p: '\u09AA\u09CD\u09B0\u09BE\u09AF\u09BC \u09EE\u09E6 \u0995\u09BF\u09AE\u09BF \u2014 \u09B8\u09C7\u09AC\u0995 \u09AC\u09CD\u09B0\u09BF\u099C \u0993 \u0995\u09BE\u09B2\u09BF\u09AE\u09CD\u09AA\u0982 \u09B0\u09C1\u099F \u09A6\u09BF\u09AF\u09BC\u09C7 \u09E8.\u09EB\u2013\u09E9 \u0998\u09A3\u09CD\u099F\u09BE\u09B0 \u09AA\u09A5\u0964',
+      loc3h: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09A8\u09BF\u099C\u09B8\u09CD\u09AC \u09AF\u09BE\u09A4\u09CD\u09B0\u09BE\u09B0 \u09AC\u09CD\u09AF\u09AC\u09B8\u09CD\u09A5\u09BE',
+      loc3p: 'NJP \u09AC\u09BE \u09AC\u09BE\u0997\u09A1\u09CB\u0997\u09B0\u09BE \u09A5\u09C7\u0995\u09C7 \u09B8\u09B0\u09BE\u09B8\u09B0\u09BF \u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09A6\u09CB\u09B0\u0997\u09CB\u09A1\u09BC\u09BE\u09AF\u09BC \u2014 \u0986\u0997\u09C7 \u09A5\u09C7\u0995\u09C7 \u099C\u09BE\u09A8\u09BE\u09B2\u09C7 \u0986\u09AE\u09B0\u09BE \u09AC\u09CD\u09AF\u09AC\u09B8\u09CD\u09A5\u09BE \u0995\u09B0\u09C7 \u09B0\u09BE\u0996\u09BF\u0964',
     },
 
-    /* ─── FINAL CTA ──────────────────────────────────────── */
+    /* FINAL CTA — Tagore: "Aasbo bole jodi kabho mone hoy..." */
     finalCta: {
-      eyebrow: 'আপনার পাহাড়ি পলায়ন অপেক্ষা করছে',
-      h2line1: 'মেঘের উপরে পা দিতে',
-      h2line2: 'কি আপনি প্রস্তুত?',
-      sub: 'সরাসরি আপনার হোস্টদের সাথে আপনার স্যুট বুক করুন। কোনো মধ্যস্থতাকারী নেই, কোনো স্বয়ংক্রিয় পোর্টাল নেই — প্রথম জিজ্ঞাসার মুহূর্ত থেকেই খাঁটি সিকিমি উষ্ণতা।',
-      cta1: 'হোয়াটসঅ্যাপে বুক করুন',
-      cta2: 'হোস্টকে কল করুন +৯১ ৯৮০০০ ০০০০০',
-      trust1: 'তাৎক্ষণিক উপলব্ধতা যাচাই',
-      trust2: '১০০% ঘরে রান্না করা খাবার',
-      trust3: 'বিনামূল্যে বাতিলের বিকল্প',
+      eyebrow: '\u098F\u0995\u099F\u09C1 \u09AE\u09A8\u09C7 \u09B9\u09B2\u09C7\u0987 \u099A\u09B2\u09C7 \u0986\u09B8\u09C1\u09A8',
+      h2line1: '\u09AA\u09BE\u09B9\u09BE\u09A1\u09BC \u09A1\u09BE\u0995\u099B\u09C7\u0964',
+      h2line2: '\u0989\u09A4\u09CD\u09A4\u09B0 \u09A6\u09BF\u09A8\u0964',
+      sub: '\u0995\u09CB\u09A8\u09CB \u09AA\u09CB\u09B0\u09CD\u099F\u09BE\u09B2 \u09A8\u09C7\u0987, \u0995\u09CB\u09A8\u09CB \u09A6\u09BE\u09B2\u09BE\u09B2 \u09A8\u09C7\u0987 \u2014 \u09B6\u09C1\u09A7\u09C1 \u0986\u09AE\u09B0\u09BE \u0986\u09B0 \u0986\u09AA\u09A8\u09BF\u0964 \u09B8\u09B0\u09BE\u09B8\u09B0\u09BF \u0995\u09A5\u09BE \u09AC\u09B2\u09C1\u09A8, \u0986\u09AE\u09B0\u09BE \u0986\u09AA\u09A8\u09BE\u09B0 \u099C\u09A8\u09CD\u09AF \u0985\u09AA\u09C7\u0995\u09CD\u09B7\u09BE\u09AF\u09BC \u0986\u099B\u09BF\u0964',
+      cta1: '\u09B9\u09CB\u09AF\u09BC\u09BE\u099F\u09B8\u0985\u09CD\u09AF\u09BE\u09AA\u09C7 \u0986\u09B8\u09C1\u09A8',
+      cta2: '\u09AB\u09CB\u09A8 \u0995\u09B0\u09C1\u09A8 +\u09EF\u09E7 \u09EF\u09EE\u09E6\u09E6\u09E6 \u09E6\u09E6\u09E6\u09E6\u09E6',
+      trust1: '\u09A4\u09BE\u09CE\u0995\u09CD\u09B7\u09A3\u09BF\u0995 \u09B8\u09BE\u09A1\u09BC\u09BE',
+      trust2: '\u09B6\u09A4\u09AD\u09BE\u0997 \u0998\u09B0\u09C7\u09B0 \u09B0\u09BE\u09A8\u09CD\u09A8\u09BE',
+      trust3: '\u09AC\u09BF\u09A8\u09BE\u09AE\u09C2\u09B2\u09CD\u09AF\u09C7 \u09AC\u09BE\u09A4\u09BF\u09B2\u09C7\u09B0 \u09B8\u09C1\u09AC\u09BF\u09A7\u09BE',
     },
 
-    /* ─── FOOTER ─────────────────────────────────────────── */
+    /* FOOTER */
     footer: {
-      tagline: 'লোয়ার বর্মায়েক, মুনসং, কালিম্পং-এ একটি পারিবারিক ঘর — যেখানে অপরিচিতরা পরিবার হয়ে যায়।',
-      colExplore: 'অন্বেষণ করুন',
-      colContact: 'যোগাযোগ',
-      linkHome: 'হোম',
-      linkStays: 'থাকার সংগ্রহ',
-      linkExp: 'অভিজ্ঞতা',
-      linkStory: 'আমাদের গল্প',
-      linkContact: 'যোগাযোগ ও বুকিং',
-      linkWhatsApp: 'হোয়াটসঅ্যাপে বুক করুন',
-      copyright: '© ২০২৫ লাখে লাচেন হোমস্টে by ব্লু আইস · সর্বস্বত্ব সংরক্ষিত',
-      madeWith: 'তৈরি হয়েছে',
-      madeIn: 'হিমালয়ের হৃদয় থেকে',
+      tagline: '\u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995, \u09AE\u09C1\u09A8\u09B8\u0982, \u0995\u09BE\u09B2\u09BF\u09AE\u09CD\u09AA\u0982 \u2014 \u098F\u0995\u099F\u09BF \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0\u09C7\u09B0 \u0998\u09B0, \u09AF\u09C7\u0996\u09BE\u09A8\u09C7 \u0985\u09AA\u09B0\u09BF\u099A\u09BF\u09A4\u09B0\u09BE \u0986\u09AA\u09A8 \u09B9\u09AF\u09BC\u09C7 \u09AF\u09BE\u09AF\u09BC\u0964',
+      colExplore: '\u0998\u09C1\u09B0\u09C7 \u09A6\u09C7\u0996\u09C1\u09A8',
+      colContact: '\u0995\u09A5\u09BE \u09AC\u09B2\u09C1\u09A8',
+      linkHome: '\u09AA\u09CD\u09B0\u09A5\u09AE \u09AA\u09BE\u09A4\u09BE',
+      linkStays: '\u09A5\u09BE\u0995\u09C1\u09A8 \u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09B8\u09BE\u09A5\u09C7',
+      linkExp: '\u0985\u09A8\u09C1\u09AD\u09AC \u0995\u09B0\u09C1\u09A8',
+      linkStory: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u0997\u09B2\u09CD\u09AA',
+      linkContact: '\u09AF\u09CB\u0997\u09BE\u09AF\u09CB\u0997 \u0993 \u09AC\u09C1\u0995\u09BF\u0982',
+      linkWhatsApp: '\u09B9\u09CB\u09AF\u09BC\u09BE\u099F\u09B8\u0985\u09CD\u09AF\u09BE\u09AA\u09C7 \u09AF\u09CB\u0997\u09BE\u09AF\u09CB\u0997',
+      copyright: '\u00A9 \u09E8\u09E6\u09E8\u09EB \u09B2\u09BE\u0996\u09C7 \u09B2\u09BE\u099C\u09C7\u09A8 \u09B9\u09CB\u09AE\u09B8\u09CD\u099F\u09C7 \u00B7 \u09AC\u09CD\u09B2\u09C1 \u0986\u0987\u09B8 \u00B7 \u09B8\u09B0\u09CD\u09AC\u09B8\u09CD\u09AC\u09A4\u09CD\u09AC \u09B8\u0982\u09B0\u0995\u09CD\u09B7\u09BF\u09A4',
+      madeWith: '\u0997\u09A1\u09BC\u09BE \u09B9\u09AF\u09BC\u09C7\u099B\u09C7',
+      madeIn: '\u09B9\u09BF\u09AE\u09BE\u09B2\u09AF\u09BC\u09C7\u09B0 \u09AD\u09BE\u09B2\u09CB\u09AC\u09BE\u09B8\u09BE\u09AF\u09BC',
     },
 
-    /* ─── MOBILE MENU ────────────────────────────────────── */
+    /* MOBILE MENU */
     mobileMenu: {
       links: [
-        { label: 'হোম', sub: 'স্বাগত ও সংক্ষিপ্ত বিবরণ' },
-        { label: 'থাকার সংগ্রহ', sub: 'স্যুট ও আবাসন' },
-        { label: 'হিমালয়ান অভিজ্ঞতা', sub: 'মুহূর্ত ও ভ্রমণ' },
-        { label: 'আমাদের গল্প ও ঐতিহ্য', sub: 'ঐতিহ্য ও গ্যালারি' },
-        { label: 'যোগাযোগ ও রিজার্ভেশন', sub: 'সরাসরি বুকিং' },
+        { label: '\u09AA\u09CD\u09B0\u09A5\u09AE \u09AA\u09BE\u09A4\u09BE', sub: '\u09B6\u09C1\u09B0\u09C1 \u09A5\u09C7\u0995\u09C7 \u09AA\u09B0\u09BF\u099A\u09AF\u09BC' },
+        { label: '\u09A5\u09BE\u0995\u09C1\u09A8 \u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u09B8\u09BE\u09A5\u09C7', sub: '\u0986\u09AA\u09A8\u09BE\u09B0 \u09AA\u09BE\u09B9\u09BE\u09A1\u09BC\u09BF \u0998\u09B0' },
+        { label: '\u0985\u09A8\u09C1\u09AD\u09AC \u0995\u09B0\u09C1\u09A8', sub: '\u09AE\u09C1\u09B9\u09C2\u09B0\u09CD\u09A4 \u0993 \u0985\u09AD\u09BF\u099C\u09CD\u099E\u09A4\u09BE' },
+        { label: '\u0986\u09AE\u09BE\u09A6\u09C7\u09B0 \u0997\u09B2\u09CD\u09AA', sub: '\u09B6\u09BF\u0995\u09A1\u09BC \u0993 \u0990\u09A4\u09BF\u09B9\u09CD\u09AF' },
+        { label: '\u0995\u09A5\u09BE \u09AC\u09B2\u09C1\u09A8', sub: '\u09A6\u09B0\u099C\u09BE \u09B8\u09AC\u09B8\u09AE\u09AF\u09BC \u0996\u09CB\u09B2\u09BE' },
       ],
-      cta: 'আপনার থাকা পরিকল্পনা করুন →',
-      location: 'লোয়ার বর্মায়েক · মুনসং · কালিম্পং',
+      cta: '\u0986\u09B8\u09C1\u09A8, \u099C\u09BE\u09AF\u09BC\u0997\u09BE \u09B0\u09BE\u0996\u09C1\u09A8 \u2192',
+      location: '\u09B2\u09CB\u09AF\u09BC\u09BE\u09B0 \u09AC\u09B0\u09CD\u09AE\u09BE\u09AF\u09BC\u09C7\u0995 \u00B7 \u09AE\u09C1\u09A8\u09B8\u0982 \u00B7 \u0995\u09BE\u09B2\u09BF\u09AE\u09CD\u09AA\u0982',
     },
+
   },
+
 };
 
 export default t;
