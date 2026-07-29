@@ -43,7 +43,99 @@
 
   /* Easing */
   --ease-expo:    cubic-bezier(0.19, 1, 0.22, 1);
-  --ease-smooth:  cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  /* Bengali fonts */
+  --font-bn-display: 'Noto Serif Bengali', 'Hind Siliguri', serif;
+  --font-bn-body:    'Hind Siliguri', 'Noto Serif Bengali', sans-serif;
+}
+
+/* ─── BENGALI LANG MODE ──────────────────────────────────────────── */
+[data-lang="bn"] {
+  --font-display: 'Noto Serif Bengali', Georgia, serif;
+  --font-serif:   'Noto Serif Bengali', Georgia, serif;
+  --font-sans:    'Hind Siliguri', system-ui, sans-serif;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+[data-lang="bn"] .section-heading,
+[data-lang="bn"] .hero-headline,
+[data-lang="bn"] .banner-heading,
+[data-lang="bn"] .story-heading,
+[data-lang="bn"] .cta-heading,
+[data-lang="bn"] h1,
+[data-lang="bn"] h2,
+[data-lang="bn"] h3 {
+  font-family: 'Noto Serif Bengali', Georgia, serif;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+[data-lang="bn"] p,
+[data-lang="bn"] span,
+[data-lang="bn"] a,
+[data-lang="bn"] li,
+[data-lang="bn"] button {
+  font-family: 'Hind Siliguri', system-ui, sans-serif;
+  letter-spacing: 0;
+  line-height: 1.8;
+}
+
+[data-lang="bn"] .eyebrow-warm,
+[data-lang="bn"] .eyebrow-gold {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+[data-lang="bn"] .nav-link,
+[data-lang="bn"] .mm-nav-item .mmn-label,
+[data-lang="bn"] .mm-nav-item .mmn-sub {
+  font-family: 'Hind Siliguri', sans-serif;
+  letter-spacing: 0;
+}
+
+/* ─── LANGUAGE TOGGLE BUTTON ─────────────────────────────────────── */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(201,133,58,0.08);
+  border: 1px solid rgba(201,133,58,0.3);
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber-light);
+  transition: background 0.3s, border-color 0.3s, transform 0.2s;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.lang-toggle:hover {
+  background: rgba(201,133,58,0.18);
+  border-color: rgba(201,133,58,0.55);
+  transform: translateY(-1px);
+}
+
+.lang-toggle .lt-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--amber-light);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  /* On mobile, show a compact toggle pill in the navbar */
+  .lang-toggle {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.7rem;
+  }
 }
 
 /* ─── RESET ────────────────────────────────────────────────────── */
@@ -279,7 +371,19 @@ button { border: none; background: none; font-family: inherit; }
   background: rgba(255,255,255,0.07);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+.nav-lang-toggle {
+  /* shown on desktop; hidden on mobile via media query override */
+}
+
 .nav-cta {
+
   flex-shrink: 0;
   padding: 0.55rem 1.4rem;
   font-size: 0.78rem;
@@ -382,7 +486,20 @@ button { border: none; background: none; font-family: inherit; }
   color: var(--text-sub);
 }
 
+.mm-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.mm-lang-toggle {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+}
+
 .mm-close-btn {
+
   width: 42px;
   height: 42px;
   border-radius: 50%;

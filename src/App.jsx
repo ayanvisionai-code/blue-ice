@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
 import Footer from './components/Footer';
@@ -12,12 +13,19 @@ import ExperiencesPage from './pages/ExperiencesPage';
 import StoryPage from './pages/StoryPage';
 import ContactPage from './pages/ContactPage';
 
-export default function App() {
+/* Inner app — needs access to LanguageContext */
+function AppInner() {
+  const { lang } = useLanguage();
   const [mobileOpen, setMobileOpen]   = useState(false);
   const [lightboxIdx, setLightboxIdx] = useState(null);
 
   const openMobile  = useCallback(() => setMobileOpen(true),  []);
   const closeMobile = useCallback(() => setMobileOpen(false), []);
+
+  /* ── Apply data-lang to <html> so CSS [data-lang="bn"] rules fire ── */
+  useEffect(() => {
+    document.documentElement.setAttribute('data-lang', lang);
+  }, [lang]);
 
   /* ── Navbar shrink on scroll ── */
   useEffect(() => {
@@ -54,16 +62,15 @@ export default function App() {
 
       <Navbar onOpenMobile={openMobile} />
 
-      {/* Mobile menu rendered at root level — always above everything */}
       {mobileOpen && <MobileMenu onClose={closeMobile} />}
 
       <main id="main-content">
         <Routes>
-          <Route path="/"           element={<HomePage />} />
-          <Route path="/stays"      element={<StaysPage />} />
+          <Route path="/"            element={<HomePage />} />
+          <Route path="/stays"       element={<StaysPage />} />
           <Route path="/experiences" element={<ExperiencesPage />} />
-          <Route path="/story"      element={<StoryPage onOpenLightbox={(i) => setLightboxIdx(i)} />} />
-          <Route path="/contact"    element={<ContactPage />} />
+          <Route path="/story"       element={<StoryPage onOpenLightbox={(i) => setLightboxIdx(i)} />} />
+          <Route path="/contact"     element={<ContactPage />} />
         </Routes>
       </main>
 
@@ -78,5 +85,13 @@ export default function App() {
         />
       )}
     </Router>
+  );
+}
+
+export default function App() {
+  return (
+    <LanguageProvider>
+      <AppInner />
+    </LanguageProvider>
   );
 }

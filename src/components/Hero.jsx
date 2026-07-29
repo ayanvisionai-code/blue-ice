@@ -1,44 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { StarIcon } from './Icons';
+import { useLanguage } from '../context/LanguageContext';
+import t from '../translations';
 
 export default function Hero() {
+  const { lang } = useLanguage();
+  const tx = t[lang].hero;
+
   return (
     <section id="hero" className="hero" aria-label="Lakhey Lachen Homestay">
-      {/* Background */}
       <div className="hero-bg" style={{ backgroundImage: "url('images/hero_himalayan_sunrise.png')" }}></div>
       <div className="hero-overlay"></div>
-
-      {/* Warm golden glow in sky */}
       <div className="hero-sun-glow" aria-hidden="true"></div>
-
-      {/* Mist layers */}
       <div className="hero-mist hero-mist-1" aria-hidden="true"></div>
       <div className="hero-mist hero-mist-2" aria-hidden="true"></div>
 
       <div className="hero-content">
-        <p className="hero-location">Lower Burmaik &middot; Munsong &middot; 3,800 ft</p>
+        <p className="hero-location">{tx.location}</p>
         <h1 className="hero-headline">
-          Where the Clouds Rest<br/>
-          <em>&amp; Your Soul Breathes.</em>
+          {tx.line1}<br/>
+          <em>{tx.line2}</em>
         </h1>
-        <p className="hero-sub">
-          Perched at 3,800 feet in Munsong. A private family sanctuary built on warm hearths, home-grown meals, and unfiltered mountain silence.
-        </p>
+        <p className="hero-sub">{tx.sub}</p>
         <div className="hero-actions">
-          <Link to="/contact" className="btn-warm" id="btn-plan">Reserve Your Stay</Link>
-          <Link to="/story" className="btn-outline-warm">Explore Our Story</Link>
+          <Link to="/contact" className="btn-warm" id="btn-plan">{tx.cta1}</Link>
+          <Link to="/story" className="btn-outline-warm">{tx.cta2}</Link>
         </div>
         <div className="hero-trust">
-          <span><StarIcon size={14} color="var(--amber-light)" /> 4.9 Guest Rating</span>
+          <span><StarIcon size={14} color="var(--amber-light)" /> {tx.trust1}</span>
           <span className="ht-sep">&middot;</span>
-          <span>3,800 ft Cloudline</span>
+          <span>{tx.trust2}</span>
           <span className="ht-sep">&middot;</span>
-          <span>Authentic Family Home</span>
+          <span>{tx.trust3}</span>
         </div>
       </div>
 
-      {/* Mountain silhouette at bottom */}
       <div className="hero-mountain" aria-hidden="true">
         <svg viewBox="0 0 1440 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0,260 L0,180 L120,140 L200,165 L300,100 L400,145 L500,80 L600,125 L700,70 L800,115 L900,75 L1000,120 L1100,85 L1200,130 L1300,95 L1380,125 L1440,105 L1440,260 Z" fill="rgba(10,8,5,0.9)"/>

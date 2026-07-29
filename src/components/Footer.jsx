@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeartIcon } from './Icons';
+import { useLanguage } from '../context/LanguageContext';
+import t from '../translations';
 
 export default function Footer() {
+  const { lang } = useLanguage();
+  const tx = t[lang].footer;
+
   return (
     <footer className="footer" aria-label="Site footer">
       <div className="footer-inner">
@@ -11,10 +16,7 @@ export default function Footer() {
             <span className="fl-blue">Blue</span><span className="fl-gold">Ice</span>
           </div>
           <p className="footer-name">Lakhey Lachen Homestay</p>
-          <p className="footer-tagline">
-            A family home in Lower Burmaik, Munsong, Kalimpong &mdash;
-            where strangers become family.
-          </p>
+          <p className="footer-tagline">{tx.tagline}</p>
           <div className="footer-socials">
             <a
               href="https://instagram.com/blueice.munsong"
@@ -42,20 +44,20 @@ export default function Footer() {
         </div>
 
         <div className="footer-links-col">
-          <h4 className="footer-col-heading">Explore</h4>
+          <h4 className="footer-col-heading">{tx.colExplore}</h4>
           <ul>
-            <li><Link to="/"           className="footer-link">Home</Link></li>
-            <li><Link to="/stays"      className="footer-link">Stay Collection</Link></li>
-            <li><Link to="/experiences" className="footer-link">Experiences</Link></li>
-            <li><Link to="/story"       className="footer-link">Our Story</Link></li>
-            <li><Link to="/contact"     className="footer-link">Contact &amp; Book</Link></li>
+            <li><Link to="/"           className="footer-link">{tx.linkHome}</Link></li>
+            <li><Link to="/stays"      className="footer-link">{tx.linkStays}</Link></li>
+            <li><Link to="/experiences" className="footer-link">{tx.linkExp}</Link></li>
+            <li><Link to="/story"       className="footer-link">{tx.linkStory}</Link></li>
+            <li><Link to="/contact"     className="footer-link">{tx.linkContact}</Link></li>
           </ul>
         </div>
 
         <div className="footer-links-col">
-          <h4 className="footer-col-heading">Contact</h4>
+          <h4 className="footer-col-heading">{tx.colContact}</h4>
           <ul>
-            <li><Link to="/contact" className="footer-link">Reserve via WhatsApp</Link></li>
+            <li><Link to="/contact" className="footer-link">{tx.linkWhatsApp}</Link></li>
             <li><a href="mailto:blueicemunsong@gmail.com" className="footer-link">blueicemunsong@gmail.com</a></li>
             <li><span className="footer-plain">Lower Burmaik, Munsong</span></li>
             <li><span className="footer-plain">Kalimpong, West Bengal</span></li>
@@ -64,8 +66,8 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 Lakhey Lachen Homestay by Blue Ice &middot; All Rights Reserved</p>
-        <p className="footer-made">Crafted with <HeartIcon size={12} color="var(--amber)" /> in the Himalayas</p>
+        <p>{tx.copyright}</p>
+        <p className="footer-made">{tx.madeWith} <HeartIcon size={12} color="var(--amber)" /> {tx.madeIn}</p>
       </div>
     </footer>
   );

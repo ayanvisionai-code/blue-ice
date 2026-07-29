@@ -1,58 +1,51 @@
 import React from 'react';
 import { HomeIcon, CloudIcon, MapIcon, StarIcon } from './Icons';
+import { useLanguage } from '../context/LanguageContext';
+import t from '../translations';
 
-const pillars = [
-  {
-    num: '01',
-    icon: <HomeIcon size={26} color="var(--amber-light)" />,
-    title: 'Stay Like Family',
-    desc: 'Not a commercial hotel. A real home — farm-grown meals from our hearth, hosts who remember your name, and warmth no resort can replicate.',
-    img: 'images/guest_hospitality_meal.png',
-  },
-  {
-    num: '02',
-    icon: <CloudIcon size={26} color="var(--amber-light)" />,
-    title: 'Wake Above the Clouds',
-    desc: 'At 3,800 ft, Lower Burmaik sits above the valley mist. Your morning view is an unfiltered horizon stretching across Kanchenjunga.',
-    img: 'images/hero_himalayan_sunrise.png',
-  },
-  {
-    num: '03',
-    icon: <MapIcon size={26} color="var(--amber-light)" />,
-    title: 'The Hidden Himalayas',
-    desc: 'Munsong remains untouched by crowded tourist buses. Secret waterfalls, tea garden trails, and mountain silence right outside your porch.',
-    img: 'images/story_mountain_path.png',
-  },
+const icons = [
+  <HomeIcon size={26} color="var(--amber-light)" />,
+  <CloudIcon size={26} color="var(--amber-light)" />,
+  <MapIcon size={26} color="var(--amber-light)" />,
 ];
 
-const stats = [
-  { val: '100%', label: 'Organic Farm Kitchen' },
-  { val: '3,800 ft', label: 'Cloudline Elevation' },
-  { val: <span>4.9 <StarIcon size={14} color="var(--amber-light)" /></span>, label: 'Guest Hospitality Rating' },
-  { val: '\u221E', label: 'Unbroken Stillness' },
+const images = [
+  'images/guest_hospitality_meal.png',
+  'images/hero_himalayan_sunrise.png',
+  'images/story_mountain_path.png',
 ];
 
 export default function WhyBlueIce() {
+  const { lang } = useLanguage();
+  const tx = t[lang].whyBlueIce;
+
+  const stats = [
+    { val: tx.stat1, label: tx.stat1Label },
+    { val: tx.stat2, label: tx.stat2Label },
+    { val: <span>{tx.stat3} <StarIcon size={14} color="var(--amber-light)" /></span>, label: tx.stat3Label },
+    { val: tx.stat4, label: tx.stat4Label },
+  ];
+
   return (
     <section id="why" className="why-section" aria-label="Why Blue Ice">
       <div className="section-inner">
         <div className="section-header" data-reveal="fade-up">
-          <p className="eyebrow-warm">Why Guests Return</p>
+          <p className="eyebrow-warm">{tx.eyebrow}</p>
           <h2 className="section-heading">
-            Three Pillars of<br/>Our Mountain<br/><em>Sanctuary</em>
+            {tx.h2line1}<br/>{tx.h2line2}<br/><em>{tx.h2line3}</em>
           </h2>
         </div>
 
         <div className="why-grid" data-reveal="fade-up">
-          {pillars.map((p) => (
-            <article key={p.num} className="why-card">
+          {tx.pillars.map((p, i) => (
+            <article key={i} className="why-card">
               <div className="wc-img-wrap">
-                <img src={p.img} alt={p.title} className="wc-img" loading="lazy" />
+                <img src={images[i]} alt={p.title} className="wc-img" loading="lazy" />
                 <div className="wc-img-fog"></div>
               </div>
               <div className="wc-body">
-                <span className="wc-num">{p.num}</span>
-                <span className="wc-icon">{p.icon}</span>
+                <span className="wc-num">0{i + 1}</span>
+                <span className="wc-icon">{icons[i]}</span>
                 <h3 className="wc-title">{p.title}</h3>
                 <p className="wc-desc">{p.desc}</p>
               </div>

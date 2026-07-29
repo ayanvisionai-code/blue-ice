@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
+import t from '../translations';
 
 export default function Introduction() {
+  const { lang } = useLanguage();
+  const tx = t[lang].introduction;
+
   return (
     <section id="story" className="story-section" aria-label="Our Story">
       <div className="section-inner">
@@ -10,47 +15,42 @@ export default function Introduction() {
           <div className="story-img-frame">
             <img src="images/story_mountain_path.png" alt="Mountain Path in Munsong" className="story-img" loading="lazy" />
             <div className="story-badge">
-              <span className="sb-num">3,800</span>
-              <span className="sb-unit">FT</span>
-              <span className="sb-label">Lower Burmaik &middot; Munsong</span>
+              <span className="sb-num">{tx.badgeAlt}</span>
+              <span className="sb-unit">{tx.badgeUnit}</span>
+              <span className="sb-label">{tx.badgeLabel}</span>
             </div>
           </div>
 
           {/* Right Column: Narrative Copy */}
           <div className="story-text">
-            <p className="eyebrow-warm">The Lakhey Heritage</p>
+            <p className="eyebrow-warm">{tx.eyebrow}</p>
             <h2 className="story-heading">
-              More Than a Stay.<br/>
-              <em>A Himalayan Home.</em>
+              {tx.h2line1}<br/>
+              <em>{tx.h2line2}</em>
             </h2>
 
-            <p className="story-para story-lead">
-              For generations, our family has called these mist-wrapped ridges home. We built Blue Ice not as a commercial resort, but as an open-hearted hearth for travelers seeking authentic Sikkim warmth.
-            </p>
-
-            <p className="story-para">
-              Here, meals are prepared with vegetables picked fresh from our own organic terrace farm. Conversations unfold over wood-fired tea, and your hosts remember your name, your preferences, and your stories.
-            </p>
+            <p className="story-para story-lead">{tx.lead}</p>
+            <p className="story-para">{tx.body}</p>
 
             <div className="story-stats-row">
               <div className="story-stat">
-                <span className="stat-num">100%</span>
-                <span className="stat-lbl">Organic Farm Kitchen</span>
+                <span className="stat-num">{tx.stat1}</span>
+                <span className="stat-lbl">{tx.stat1Label}</span>
               </div>
               <div className="stat-divider"></div>
               <div className="story-stat">
-                <span className="stat-num">4.9&starf;</span>
-                <span className="stat-lbl">Guest Hospitality Rating</span>
+                <span className="stat-num">{tx.stat2}</span>
+                <span className="stat-lbl">{tx.stat2Label}</span>
               </div>
               <div className="stat-divider"></div>
               <div className="story-stat">
-                <span className="stat-num">0</span>
-                <span className="stat-lbl">City Noise &amp; Traffic</span>
+                <span className="stat-num">{tx.stat3}</span>
+                <span className="stat-lbl">{tx.stat3Label}</span>
               </div>
             </div>
 
             <div className="story-action">
-              <Link to="/contact" className="btn-warm">Plan Your Journey &rarr;</Link>
+              <Link to="/contact" className="btn-warm">{tx.cta}</Link>
             </div>
           </div>
         </div>
