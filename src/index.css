@@ -201,12 +201,22 @@ button { border: none; background: none; font-family: inherit; }
 /* ─── NAVBAR ────────────────────────────────────────────────────── */
 #navbar {
   position: fixed;
-  top: 1.25rem;
+  top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 2.5rem);
   max-width: 1100px;
   z-index: 1000;
+}
+
+@media (max-width: 640px) {
+  #navbar {
+    top: 0.75rem;
+    width: auto;
+    left: 1rem;
+    right: 1rem;
+    transform: none;
+  }
 }
 
 .nav-inner {
@@ -1790,6 +1800,12 @@ section + section {
   .nav-links { display: none; }
   .nav-cta   { display: none; }
   .nav-hamburger { display: flex; }
+  .nav-inner {
+    padding: 0.6rem 1rem;
+    border-radius: 100px;
+  }
+  .nav-logo-sub { display: none; }
+  .nav-logo-mark { font-size: 1.05rem; }
 
   /* Hero */
   .hero-headline { font-size: clamp(2.4rem, 9vw, 3.2rem); }

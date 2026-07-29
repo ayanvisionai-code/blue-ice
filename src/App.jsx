@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
@@ -16,13 +16,14 @@ export default function App() {
   const [mobileOpen, setMobileOpen]   = useState(false);
   const [lightboxIdx, setLightboxIdx] = useState(null);
 
+  const openMobile  = useCallback(() => setMobileOpen(true),  []);
+  const closeMobile = useCallback(() => setMobileOpen(false), []);
+
   /* ── Navbar shrink on scroll ── */
   useEffect(() => {
     const onScroll = () => {
       const navbar = document.getElementById('navbar');
-      if (navbar) {
-        navbar.classList.toggle('scrolled', window.scrollY > 50);
-      }
+      if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 50);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
@@ -31,6 +32,7 @@ export default function App() {
   /* ── Lock body scroll when mobile menu open ── */
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
   }, [mobileOpen]);
 
   /* ── Lightbox keyboard controls ── */
@@ -47,19 +49,21 @@ export default function App() {
 
   return (
     <Router>
-      <ScrollToTop onCloseMobile={() => setMobileOpen(false)} />
+      <ScrollToTop onCloseMobile={closeMobile} />
       <a href="#main-content" className="skip-link">Skip to content</a>
 
-      <Navbar onOpenMobile={() => setMobileOpen(true)} />
-      {mobileOpen && <MobileMenu onClose={() => setMobileOpen(false)} />}
+      <Navbar onOpenMobile={openMobile} />
+
+      {/* Mobile menu rendered at root level — always above everything */}
+      {mobileOpen && <MobileMenu onClose={closeMobile} />}
 
       <main id="main-content">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/stays" element={<StaysPage />} />
+          <Route path="/"           element={<HomePage />} />
+          <Route path="/stays"      element={<StaysPage />} />
           <Route path="/experiences" element={<ExperiencesPage />} />
-          <Route path="/story" element={<StoryPage onOpenLightbox={(i) => setLightboxIdx(i)} />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/story"      element={<StoryPage onOpenLightbox={(i) => setLightboxIdx(i)} />} />
+          <Route path="/contact"    element={<ContactPage />} />
         </Routes>
       </main>
 
