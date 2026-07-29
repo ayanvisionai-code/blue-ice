@@ -1,4 +1,5 @@
 import React from 'react';
+import { KitchenIcon, ElevationIcon, FireIcon, WifiIcon, CarIcon, TeaIcon } from './Icons';
 
 const rooms = [
   {
@@ -40,12 +41,12 @@ const rooms = [
 ];
 
 const amenities = [
-  { icon: '\uD83C\uDF72', label: 'Home-cooked Meals' },
-  { icon: '\uD83C\uDF04', label: '3,800 ft Elevation' },
-  { icon: '\uD83D\uDD25', label: 'Evening Bonfire' },
-  { icon: '\uD83D\uDCF6', label: 'High-Speed WiFi' },
-  { icon: '\uD83D\uDE97', label: 'Free Pickup & Parking' },
-  { icon: '\u2615', label: 'Daily Tea Service' },
+  { icon: <KitchenIcon size={20} color="var(--amber-light)" />, label: 'Home-cooked Meals' },
+  { icon: <ElevationIcon size={20} color="var(--amber-light)" />, label: '3,800 ft Elevation' },
+  { icon: <FireIcon size={20} color="var(--amber-light)" />, label: 'Evening Bonfire' },
+  { icon: <WifiIcon size={20} color="var(--amber-light)" />, label: 'High-Speed WiFi' },
+  { icon: <CarIcon size={20} color="var(--amber-light)" />, label: 'Free Pickup & Parking' },
+  { icon: <TeaIcon size={20} color="var(--amber-light)" />, label: 'Daily Tea Service' },
 ];
 
 export default function FeaturedStay() {

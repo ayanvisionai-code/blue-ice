@@ -1,8 +1,12 @@
 import React from 'react';
+import { 
+  SunIcon, FireIcon, LeafIcon, WaterIcon, 
+  TrekIcon, ViewpointIcon, MonasteryIcon, FarmIcon, StargazingIcon, KitchenIcon 
+} from './Icons';
 
 const moments = [
   {
-    icon: '\u2600',
+    icon: <SunIcon size={24} color="var(--amber-light)" />,
     num: '01',
     title: 'Sunrise Above the Clouds',
     desc: 'Wake before the world stirs. Watch gold pour over the Kanchenjunga range from your private verandah. A cup of Darjeeling tea in hand.',
@@ -10,7 +14,7 @@ const moments = [
     tag: 'Every Morning',
   },
   {
-    icon: '\uD83D\uDD25',
+    icon: <FireIcon size={24} color="var(--amber-light)" />,
     num: '02',
     title: 'Bonfire Evenings',
     desc: 'As the valley fills with night mist, gather around a wood fire under a sky blazing with stars. No city lights for 80 kilometres.',
@@ -18,7 +22,7 @@ const moments = [
     tag: 'Every Night',
   },
   {
-    icon: '\uD83C\uDF43',
+    icon: <LeafIcon size={24} color="var(--amber-light)" />,
     num: '03',
     title: 'Tea Garden Walks',
     desc: "Walk the misty terraced slopes of Munsong's tea gardens. Pick fresh leaves. Breathe air that tastes like green hills and rain.",
@@ -26,7 +30,7 @@ const moments = [
     tag: '2 km from Home',
   },
   {
-    icon: '\uD83D\uDCA7',
+    icon: <WaterIcon size={24} color="var(--amber-light)" />,
     num: '04',
     title: 'Hidden Waterfalls',
     desc: 'Follow secret trails to gorges the maps have never named. Hidden cascades where the mountain breathes and time slows down.',
@@ -36,12 +40,12 @@ const moments = [
 ];
 
 const quickActs = [
-  { icon: '\uD83E\uDD7E', title: 'Forest Treks', detail: '1.5 hrs · 2 km' },
-  { icon: '\uD83C\uDF04', title: 'Teesta Viewpoint', detail: '20 min drive' },
-  { icon: '\u26E9', title: 'Monastery Visit', detail: '30 min drive' },
-  { icon: '\uD83C\uDF3F', title: 'Organic Farm', detail: 'In Homestay' },
-  { icon: '\u2728', title: 'Stargazing', detail: 'Every Clear Night' },
-  { icon: '\uD83C\uDF72', title: 'Mountain Kitchen', detail: 'Daily · Home-cooked' },
+  { icon: <TrekIcon size={20} color="var(--amber-light)" />, title: 'Forest Treks', detail: '1.5 hrs · 2 km' },
+  { icon: <ViewpointIcon size={20} color="var(--amber-light)" />, title: 'Teesta Viewpoint', detail: '20 min drive' },
+  { icon: <MonasteryIcon size={20} color="var(--amber-light)" />, title: 'Monastery Visit', detail: '30 min drive' },
+  { icon: <FarmIcon size={20} color="var(--amber-light)" />, title: 'Organic Farm', detail: 'In Homestay' },
+  { icon: <StargazingIcon size={20} color="var(--amber-light)" />, title: 'Stargazing', detail: 'Every Clear Night' },
+  { icon: <KitchenIcon size={20} color="var(--amber-light)" />, title: 'Mountain Kitchen', detail: 'Daily · Home-cooked' },
 ];
 
 export default function FeaturedExperiences() {

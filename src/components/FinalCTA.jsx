@@ -1,4 +1,5 @@
 import React from 'react';
+import { StarIcon, ZapIcon } from './Icons';
 
 export default function FinalCTA() {
   return (
@@ -19,9 +20,9 @@ export default function FinalCTA() {
         </p>
 
         <div className="cta-trust" data-reveal="fade-up">
-          <span>&#11088; 4.9 Google Rating</span>
+          <span><StarIcon size={14} color="var(--amber-light)" /> 4.9 Google Rating</span>
           <span className="ct-sep">&middot;</span>
-          <span>&#9889; ~2 hr Response</span>
+          <span><ZapIcon size={14} color="var(--amber-light)" /> ~2 hr Response</span>
           <span className="ct-sep">&middot;</span>
           <span>Secure Direct Booking</span>
         </div>

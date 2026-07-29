@@ -1,4 +1,5 @@
 import React from 'react';
+import { StarIcon } from './Icons';
 
 export default function Hero() {
   return (
@@ -29,7 +30,7 @@ export default function Hero() {
           <a href="#story" className="btn-outline-warm">Discover Our Story</a>
         </div>
         <div className="hero-trust">
-          <span>&#11088; 4.9 Rating</span>
+          <span><StarIcon size={14} color="var(--amber-light)" /> 4.9 Rating</span>
           <span className="ht-sep">&middot;</span>
           <span>3,800 ft Elevation</span>
           <span className="ht-sep">&middot;</span>

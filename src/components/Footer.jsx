@@ -1,4 +1,5 @@
 import React from 'react';
+import { HeartIcon } from './Icons';
 
 export default function Footer() {
   return (
@@ -63,7 +64,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>&copy; 2025 Lakhey Lachen Homestay by Blue Ice &middot; All Rights Reserved</p>
-        <p className="footer-made">Crafted with love in the Himalayas</p>
+        <p className="footer-made">Crafted with <HeartIcon size={12} color="var(--amber)" /> in the Himalayas</p>
       </div>
     </footer>
   );

@@ -1,23 +1,24 @@
 import React from 'react';
+import { HomeIcon, CloudIcon, MapIcon, StarIcon } from './Icons';
 
 const pillars = [
   {
     num: '01',
-    icon: '\uD83C\uDFE1',
+    icon: <HomeIcon size={26} color="var(--amber-light)" />,
     title: 'Stay Like Family',
     desc: 'Not a hotel. A real home — fresh food from our kitchen, hosts who remember your name, and a warmth no resort can replicate.',
     img: 'images/guest_hospitality_meal.png',
   },
   {
     num: '02',
-    icon: '\u2601',
+    icon: <CloudIcon size={26} color="var(--amber-light)" />,
     title: 'Wake Above the Clouds',
     desc: 'At 3,800 ft, Lower Burmaik sits above the valley mist. Your morning view is an unfiltered horizon over Kanchenjunga.',
     img: 'images/hero_himalayan_sunrise.png',
   },
   {
     num: '03',
-    icon: '\uD83D\uDDFA',
+    icon: <MapIcon size={26} color="var(--amber-light)" />,
     title: 'Hidden Himalayas',
     desc: "Munsong is not on crowded tourist maps. Secret waterfalls, tea gardens, and quiet trails \u2014 right outside your door.",
     img: 'images/story_mountain_path.png',
@@ -27,7 +28,7 @@ const pillars = [
 const stats = [
   { val: '100%', label: 'Authentic Homestay' },
   { val: '3,800 ft', label: 'Elevation' },
-  { val: '4.9\u2605', label: 'Guest Rating' },
+  { val: <span>4.9 <StarIcon size={14} color="var(--amber-light)" /></span>, label: 'Guest Rating' },
   { val: '\u221E', label: 'Peace & Silence' },
 ];
 
